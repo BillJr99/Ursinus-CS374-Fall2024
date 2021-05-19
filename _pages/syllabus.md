@@ -195,7 +195,8 @@ schedule:
   deliverables:  
   - dtitle: "Programming Assignment: Warmup Handed Out"
     dlink: "./Assignments/Warmup"
-    points: 10      
+    points: 10   
+    submission_types: "noupload"            
 - week: "0"
   date: "2"
   title: "History of Programming Languages"
@@ -203,7 +204,8 @@ schedule:
   deliverables:
   - dtitle: "Participation: Pre-Assessment Handed Out"
     dlink: "./Assignments/Participation/PreAssessment"
-    points: 10   
+    points: 10  
+    submission_types: "written"            
 - week: "1"
   date: "0"
   title: "History of Programming Languages"  
@@ -224,7 +226,8 @@ schedule:
   deliverables:
   - dtitle: "Programming Assignment: Warmup Due"
     dlink: "./Assignments/Warmup"
-    points: 10     
+    points: 10   
+    submission_types: "noupload"            
 - week: "1"
   date: "2"
   title: "Object Oriented Languages"
@@ -232,6 +235,7 @@ schedule:
   - dtitle: "Participation: Pre-Assessment Due"
     dlink: "./Assignments/Participation/PreAssessment"
     points: 10 
+    submission_types: "written"        
   - dtitle: "Lab: Shell Handed Out"
     dlink: "./Labs/Shell"
     points: 100    
@@ -306,6 +310,7 @@ schedule:
   - dtitle: "Midterm Exam: Midterm Handed Out"
     dlink: false
     points: 100   
+    submission_types: "written"        
 - week: "5"
   date: "2"
   title: "Regular Expressions"
@@ -328,9 +333,11 @@ schedule:
   - dtitle: "Participation: First Self-Assessment Handed Out"
     dlink: "./Assignments/Participation/SelfAssessment"
     points: 10 
+    submission_types: "written"        
   - dtitle: "Midterm Exam: Midterm Due"
     dlink: false
-    points: 100      
+    points: 100   
+    submission_types: "written"            
 - week: "6"
   date: "2"
   title: "Finite Automata"  
@@ -348,7 +355,8 @@ schedule:
   deliverables:
   - dtitle: "Participation: First Self-Assessment Due"
     dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10     
+    points: 10  
+    submission_types: "written"            
   readings:
   - rtitle: "PLC Ch. 3"
     rlink: false      
@@ -473,7 +481,8 @@ schedule:
   deliverables:
   - dtitle: "Participation: Second Self-Assessment Handed Out"
     dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10   
+    points: 10  
+    submission_types: "written"            
 - week: "13"
   date: "2"
   title: "Abstract Syntax Trees"  
@@ -498,6 +507,7 @@ schedule:
   - dtitle: "Participation: Second Self-Assessment Due"
     dlink: "./Assignments/Participation/SelfAssessment"
     points: 10    
+    submission_types: "written"        
 - week: "15"
   date: "0"
   title: "Review" 
