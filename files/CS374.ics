@@ -577,7 +577,7 @@ DTSTAMP:20210412T000000Z
 DTSTART;VALUE=DATE:20210412
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/ParserInterpreter\nReading: Compilers Ch. 4-5
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -586,7 +586,7 @@ DTSTAMP:20210414T000000Z
 DTSTART;VALUE=DATE:20210414
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/ParserInterpreter\nReading: Compilers Ch. 4-5
+DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
