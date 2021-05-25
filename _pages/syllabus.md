@@ -452,14 +452,14 @@ schedule:
     points: 100     
 - week: "12"
   date: "0"
-  title: "Parsing and Interpreting: the LL(1) Parser"   
-- week: "12"
-  date: "1"
-  title: "Parsing and Interpreting" 
+  title: "Parsing and Interpreting"   
   link: "./Activities/ParserInterpreter"  
   readings:
   - rtitle: "Compilers Ch. 4-5"
-    rlink: false    
+    rlink: false      
+- week: "12"
+  date: "1"
+  title: "Parsing and Interpreting: the LL(1) Parser" 
 - week: "12"
   date: "2"
   title: "Parsing and Interpreting"  
