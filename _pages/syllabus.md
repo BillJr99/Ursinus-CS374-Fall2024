@@ -219,10 +219,8 @@ schedule:
   readings:
     - rtitle: "Concise Introduction to Prolog"
       rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
-    - rtitle: "The Scheme Programming Language"
-      rlink: "https://www.scheme.com/tspl3/"
-    - rtitle: "Bash Syntax Reference"
-      rlink: "https://tiswww.case.edu/php/chet/bash/bashref.html"
+    - rtitle: "PLC Ch. 6"
+      rlink: false        
   deliverables:
   - dtitle: "Programming Assignment: Warmup Due"
     dlink: "./Assignments/Warmup"
@@ -230,7 +228,7 @@ schedule:
     submission_types: "noupload"            
 - week: "1"
   date: "2"
-  title: "Object Oriented Languages"
+  title: "Functional Programming"
   deliverables:
   - dtitle: "Participation: Pre-Assessment Due"
     dlink: "./Assignments/Participation/PreAssessment"
@@ -240,58 +238,52 @@ schedule:
     dlink: "./Labs/Shell"
     points: 100    
   readings:
-  - rtitle: "PLC Ch. 6"
-    rlink: false      
+  - rtitle: "PLC Ch. 7"
+    rlink: false  
+  - rtitle: "The Scheme Programming Language"
+    rlink: "https://www.scheme.com/tspl3/"
 - week: "2"
   date: "0"
-  title: "Functional Programming"  
-  readings:
-  - rtitle: "PLC Ch. 7"
-    rlink: false   
+  title: "Functional Programming"    
 - week: "2"
   date: "1"
   title: "Functional Programming" 
 - week: "2"
   date: "2"
-  title: "Functional Programming"  
-- week: "3"
-  date: "0"
   title: "Functional Programming" 
   deliverables:
   - dtitle: "Lab: Shell Due"
     dlink: "./Labs/Shell"
-    points: 100   
+    points: 100  
+  - dtitle: "Programming Assignment: Functional Programming Handed Out"
+    dlink: "./Assignments/Functional"
+    points: 100        
 - week: "3"
-  date: "1"
-  title: "Functional Programming"    
-- week: "3"
-  date: "2"
+  date: "0"
   title: "Logic Programming"  
   readings:
   - rtitle: "PLC Ch. 8"
     rlink: false   
-  deliverables:
-  - dtitle: "Programming Assignment: Functional Programming Handed Out"
-    dlink: "./Assignments/Functional"
-    points: 100       
-- week: "4"
-  date: "0"
-  title: "Scripting Languages"    
+- week: "3"
+  date: "1"
+  title: "Scripting Languages" 
   readings:
+  - rtitle: "Bash Syntax Reference"
+    rlink: "https://tiswww.case.edu/php/chet/bash/bashref.html"      
   - rtitle: "Bash Scripting Tutorial"
     rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"  
   - rtitle: "Bash Scripting Video"
-    rlink: "https://youtube.com/watch?v=e7BufAVwDiM"
-- week: "4"
-  date: "1"
-  title: "Scripting Languages" 
-- week: "4"
+    rlink: "https://youtube.com/watch?v=e7BufAVwDiM"  
+- week: "3"
   date: "2"
+  title: "Scripting Languages"       
+- week: "4"
+  date: "0"
   title: "Syntax and Semantics"
   link: "./Activities/Syntax"
   readings:
   - rtitle: "PLC Ch. 2"
-    rlink: false  
+    rlink: false   
   deliverables:
   - dtitle: "Programming Assignment: Functional Programming Due"
     dlink: "./Assignments/Functional"
@@ -299,13 +291,25 @@ schedule:
   - dtitle: "Programming Assignment: Shell Scripting Handed Out"
     dlink: "./Assignments/Scripting"
     points: 100     
+- week: "4"
+  date: "1"
+  title: "Bindng and Scope" 
+  link: "./Activities/BindingScope" 
+- week: "4"
+  date: "2"
+  title: "Bindng and Scope"
 - week: "5"
   date: "0"
-  title: "Bindng and Scope" 
-  link: "./Activities/BindingScope"  
+  title: "Regular Expressions"
+  link: "./Activities/Regex"
+  readings:
+  - rtitle: "Compilers Ch. 3.3"
+    rlink: false
+  - rtitle: "Regular Expressions Video"
+    rlink: "https://youtube.com/watch?v=528Jc3q86F8"    
 - week: "5"
   date: "1"
-  title: "Binding and Scope"
+  title: "Regular Expressions"   
   deliverables:
   - dtitle: "Midterm Exam: Midterm Handed Out"
     dlink: false
@@ -313,22 +317,20 @@ schedule:
     submission_types: "written"        
 - week: "5"
   date: "2"
-  title: "Regular Expressions"
-  link: "./Activities/Regex"
-  readings:
-  - rtitle: "Compilers Ch. 3.3"
-    rlink: false
-  - rtitle: "Regular Expressions Video"
-    rlink: "https://youtube.com/watch?v=528Jc3q86F8"  
-- week: "6"
-  date: "0"
-  title: "Finite Automata"  
+  title: "Finite Automata"
   link: "./Activities/Automata"
   readings:
   - rtitle: "Compilers Ch. 3.4-3.6"
     rlink: false  
   - rtitle: "Finite Automata Video"
-    rlink: "https://youtube.com/watch?v=vhiiia1_hC4"  
+    rlink: "https://youtube.com/watch?v=vhiiia1_hC4"   
+  deliverables:
+  - dtitle: "Programming Assignment: Shell Scripting Due"
+    dlink: "./Assignments/Scripting"
+    points: 100  
+- week: "6"
+  date: "0"
+  title: "Finite Automata"   
   deliverables:
   - dtitle: "Participation: First Self-Assessment Handed Out"
     dlink: "./Assignments/Participation/SelfAssessment"
@@ -341,10 +343,7 @@ schedule:
 - week: "6"
   date: "2"
   title: "Finite Automata"  
-  deliverables:
-  - dtitle: "Programming Assignment: Shell Scripting Due"
-    dlink: "./Assignments/Scripting"
-    points: 100   
+  deliverables: 
   - dtitle: "Programming Assignment: Regular Expressions Handed Out"
     dlink: "./Assignments/Regex"
     points: 100      
@@ -367,23 +366,27 @@ schedule:
   title: "Data Types"     
 - week: "7"
   date: "2"
-  title: "Data Types"  
-- week: "8"
-  date: "0"
   title: "Code Structure" 
   link: "./Activities/CodeStructure"
   readings:
   - rtitle: "PLC Ch. 4"
     rlink: false  
 - week: "8"
-  date: "1"
-  title: "Code Structure: Expressions and Conditionals" 
+  date: "0"
+  title: "Code Structure: Expressions and Conditionals"
 - week: "8"
-  date: "2"
-  title: "Code Structure: Functions, Exceptions, and Memory Management" 
+  date: "1"
+  title: "Code Structure: Functions, Exceptions, and Memory Management"
   readings:
   - rtitle: "Compilers Ch. 9"
-    rlink: false 
+    rlink: false   
+- week: "8"
+  date: "2"
+  title: "Data Structures and Generics"  
+  link: "./Activities/DataStructures"
+  readings:
+  - rtitle: "PLC Ch. 5"
+    rlink: false  
   deliverables:
   - dtitle: "Programming Assignment: Regular Expressions Due"
     dlink: "./Assignments/Regex"
@@ -393,40 +396,36 @@ schedule:
     points: 100    
 - week: "9"
   date: "0"
-  title: "Data Structures and Generics"  
-  link: "./Activities/DataStructures"
-  readings:
-  - rtitle: "PLC Ch. 5"
-    rlink: false  
-- week: "9"
-  date: "1"
   title: "The Lambda Calculus"
   link: "./Activities/LambdaCalculus"
   readings:
   - rtitle: "Introduction to the Lambda Calculus"
     rlink: "https://plato.stanford.edu/entries/lambda-calculus/" 
   - rtitle: "Lambda Calculus Video"
-    rlink: "https://youtube.com/watch?v=3VQ382QG-y4"  
+    rlink: "https://youtube.com/watch?v=3VQ382QG-y4"    
 - week: "9"
-  date: "2"
-  title: "The Compilation and Linking Process"  
+  date: "1"
+  title: "The Compilation / Linking Process and Bytecode"  
   link: "./Activities/CompilerLinker"
   readings:
-  - rtitle: "Compilers Ch. 2"
+  - rtitle: "Compilers Ch. 2, 8"
     rlink: false 
   - rtitle: "How the Linker Works Video"
     rlink: "https://youtube.com/watch?v=oXk87NRTL1Y"
   - rtitle: "Static and Dynamic Linking Video"
-    rlink: "https://youtube.com/watch?v=UdMRcJwvWIY"
+    rlink: "https://youtube.com/watch?v=UdMRcJwvWIY"   
+- week: "9"
+  date: "2"
+  title: "Libraries"
 - week: "10"
   date: "0"
-  title: "Libraries"     
+  title: "Grammars"   
+  readings:
+  - rtitle: "Compilers Ch. 3"
+    rlink: false   
 - week: "10"
   date: "2"
-  title: "Bytecode"  
-  readings:
-  - rtitle: "Compilers Ch. 8"
-    rlink: false  
+  title: "Grammars"   
   deliverables:
   - dtitle: "Programming Assignment: Automata Due"
     dlink: "./Assignments/Automata"
@@ -436,18 +435,14 @@ schedule:
     points: 100      
 - week: "11"
   date: "0"
-  title: "Grammars" 
-  link: "./Activities/Grammars"   
-  readings:
-  - rtitle: "Compilers Ch. 3"
-    rlink: false    
+  title: "Ambiguity in Grammars"    
 - week: "11"
   date: "1"
-  title: "Ambiguity in Grammars"       
+  title: "Tokens and Scanning"
+  link: "./Activities/TokensScanning"  
 - week: "11"
   date: "2"
   title: "Tokens and Scanning"
-  link: "./Activities/TokensScanning"
   deliverables:
   - dtitle: "Programming Assignment: Libraries Due"
     dlink: "./Assignments/Libraries"
@@ -457,7 +452,7 @@ schedule:
     points: 100     
 - week: "12"
   date: "0"
-  title: "Tokens and Scanning"   
+  title: "Parsing and Interpreting: the LL(1) Parser"   
 - week: "12"
   date: "1"
   title: "Parsing and Interpreting" 
@@ -477,7 +472,7 @@ schedule:
   title: "Parsing and Interpreting"    
 - week: "13"
   date: "1"
-  title: "Parsing and Interpreting"  
+  title: "Parsing and Interpreting: The LR(1) Parser"  
   deliverables:
   - dtitle: "Participation: Second Self-Assessment Handed Out"
     dlink: "./Assignments/Participation/SelfAssessment"
@@ -485,11 +480,7 @@ schedule:
     submission_types: "written"            
 - week: "13"
   date: "2"
-  title: "Abstract Syntax Trees"  
-  link: "./Activities/AST"      
-  readings:
-  - rtitle: "Compilers Ch. 6"
-    rlink: false 
+  title: "Parsing and Interpreting"   
   deliverables:
   - dtitle: "Lab: Scanning Due"
     dlink: "./Labs/Scanner"
@@ -499,10 +490,14 @@ schedule:
     points: 100     
 - week: "14"
   date: "0"
-  title: "Abstract Syntax Trees"  
+  title: "Parsing Workshop"   
 - week: "14"
   date: "1"
-  title: "Abstract Syntax Trees"  
+  title: "Abstract Syntax Trees" 
+  link: "./Activities/AST"      
+  readings:
+  - rtitle: "Compilers Ch. 6"
+    rlink: false   
   deliverables:   
   - dtitle: "Participation: Second Self-Assessment Due"
     dlink: "./Assignments/Participation/SelfAssessment"
