@@ -53,8 +53,16 @@ info:
         ]]></script> 
       title: COBOL Records
       questions:
-        - "What, in your own words, is a data structure in COBOL?"        
-        
+        - "What, in your own words, is a data structure in COBOL?"      
+    - model: |
+        <iframe src="https://www.baeldung.com/java-type-erasure" width="100%" height="600">
+      title: "Type Erasure"
+      questions:
+        - "Suppose you call <code>public static <T> max(T a, T b)</code> with two <code>Integer</code> objects.  To what type will T resolve?"
+        - "Now suppose you call <code>public static <T> max(T a, T b)</code> with one <code>Integer</code> object and one <code>BigInteger</code> object (where <code>BigInteger</code> extends <code>Integer</code>).  To what type will T resolve?"
+        - "In Java, how might these resolve if the two objects have nothing in common in their class hierarchy?"
+        - "Might this resolution occur at compile time or at runtime?  How would this work in each situation?"
+        - "Can you think of other examples where type erasure is used commonly in your favorite programming language?"
 tags:
   - datastructures
   

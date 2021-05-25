@@ -122,6 +122,8 @@ info:
       title: "Generator Functions"
       questions:
         - "What, in your own words, does a generator do?"
+        - "What do you think are the advantages of using a generator as opposed to creating and returning a list?"
+        - "In Python 2, <a href=\"https://www.geeksforgeeks.org/range-vs-xrange-python/\">create a list</a> using <code>range(N)</code> for some large value of <code>N</code>.  Use <code>sys.getsizeof()</code> to get the size of the list you create, and print it to the screen.  Now, repeat this with the <code>xrange(N)</code> function.  How do they compare, and how might you account for the difference?"
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         ; https://www.cs.trinity.edu/~jhowland/ccsc98/ccsc98/node5.html
