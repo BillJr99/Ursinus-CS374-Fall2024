@@ -13,7 +13,7 @@ info:
         <code>&lambda;x.x</code>
       title: Lambda Calculus
       questions:
-        - "The first statement defines a parmeter called <code>x</code> and returns <code>x</code>. What does <code>(&lambda;x.x)y</code> do?"
+        - "The first statement defines a parameter called <code>x</code> and returns <code>x</code>. What does <code>(&lambda;x.x)y</code> do?"
     - model: |
         <code>true = &lambda;xy.x</code><br>
         <code>false = &lambda;xy.y</code><br>
