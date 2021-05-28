@@ -685,7 +685,7 @@ DTSTAMP:20210428T000000Z
 DTSTART;VALUE=DATE:20210428
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/AST\nReading: Compilers Ch. 6\nDeliverable: Participation: Second Self-Assessment Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Participation/SelfAssessment
+DESCRIPTION:\nDeliverable: Participation: Second Self-Assessment Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Participation/SelfAssessment
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -712,7 +712,7 @@ DTSTAMP:20210503T000000Z
 DTSTART;VALUE=DATE:20210503
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:\nDeliverable: Lab: Parsing Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Labs/Parser\nDeliverable: Final Project: Project and Presentation Due https://www.billmongan.com/Ursinus-CS374-Fall2021/Projects/Final
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/AST\nReading: Compilers Ch. 6\nDeliverable: Lab: Parsing Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Labs/Parser\nDeliverable: Final Project: Project and Presentation Due https://www.billmongan.com/Ursinus-CS374-Fall2021/Projects/Final
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
