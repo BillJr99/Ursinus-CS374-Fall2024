@@ -494,27 +494,27 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-0366c95f1830
 DTSTAMP:20210329T000000Z
 DTSTART;VALUE=DATE:20210329
-SUMMARY:CS374 Principles of Programming Languages: Class Meeting
-LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/Grammars\nReading: Compilers Ch. 3
-PRIORITY:3
-END:VEVENT
-BEGIN:VEVENT
-UID:00000000-0000-0000-0000-0366c95f1831
-DTSTAMP:20210402T000000Z
-DTSTART;VALUE=DATE:20210402
 SUMMARY:CS374 Principles of Programming Languages: Programming Assignment: Automata Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
-UID:00000000-0000-0000-0000-0366c95f1832
-DTSTAMP:20210402T000000Z
-DTSTART;VALUE=DATE:20210402
+UID:00000000-0000-0000-0000-0366c95f1831
+DTSTAMP:20210329T000000Z
+DTSTART;VALUE=DATE:20210329
 SUMMARY:CS374 Principles of Programming Languages: Programming Assignment: Libraries Handed Out
 LOCATION:
 DESCRIPTION:
+PRIORITY:3
+END:VEVENT
+BEGIN:VEVENT
+UID:00000000-0000-0000-0000-0366c95f1832
+DTSTAMP:20210329T000000Z
+DTSTART;VALUE=DATE:20210329
+SUMMARY:CS374 Principles of Programming Languages: Class Meeting
+LOCATION:
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/Grammars\nReading: Compilers Ch. 3\nDeliverable: Programming Assignment: Automata Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Automata\nDeliverable: Programming Assignment: Libraries Handed Out https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Libraries
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -523,7 +523,7 @@ DTSTAMP:20210402T000000Z
 DTSTART;VALUE=DATE:20210402
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:\nDeliverable: Programming Assignment: Automata Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Automata\nDeliverable: Programming Assignment: Libraries Handed Out https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Libraries
+DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
