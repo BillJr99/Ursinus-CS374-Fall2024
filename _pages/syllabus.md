@@ -424,16 +424,16 @@ schedule:
   readings:
   - rtitle: "Compilers Ch. 3"
     rlink: false   
-- week: "10"
-  date: "2"
-  title: "Grammars"   
   deliverables:
   - dtitle: "Programming Assignment: Automata Due"
     dlink: "./Assignments/Automata"
     points: 100  
   - dtitle: "Programming Assignment: Libraries Handed Out"
     dlink: "./Assignments/Libraries"
-    points: 100      
+    points: 100     
+- week: "10"
+  date: "2"
+  title: "Grammars"        
 - week: "11"
   date: "0"
   title: "Ambiguity in Grammars"    
