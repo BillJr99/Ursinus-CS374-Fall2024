@@ -420,6 +420,7 @@ schedule:
 - week: "10"
   date: "0"
   title: "Grammars"   
+  link: "./Activities/Grammars"
   readings:
   - rtitle: "Compilers Ch. 3"
     rlink: false   
