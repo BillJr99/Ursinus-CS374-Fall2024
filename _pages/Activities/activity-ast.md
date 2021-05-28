@@ -34,6 +34,7 @@ info:
       questions:
         - "Where do you think inherited attributes might come from?"
         - "What are some other attributes you might associate with productions?"
+        - "Suppose an Expression is the product of a Term and a Factor.  How might you determine the type (<code>float</code> or <code>int</code>) of the resulting Expression?"
     - model: |
         <a title="Dcoetzee, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Abstract_syntax_tree_for_Euclidean_algorithm.svg"><img width="512" alt="Abstract syntax tree for Euclidean algorithm" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Abstract_syntax_tree_for_Euclidean_algorithm.svg/512px-Abstract_syntax_tree_for_Euclidean_algorithm.svg.png"></a>
         <br>

@@ -6,6 +6,7 @@ excerpt: "CS374: Programming Language Principles - Parsers and Interpreters"
 
 info: 
   goals: 
+    - To explain the limitations of an LL(1) parser
     - To remove left recursion and to left factor a grammar for LL(1) parsing, where possible
     - To describe the components of an LL(k) and an LR(k) parser
     - To implement a simple parser given a grammar, from code or using tools such as lex and yacc
@@ -186,6 +187,29 @@ info:
       questions:
         - "Try this example with some sample calculations."
         - "An LL(1) parser requires a grammar with no left recursion, and with unique nonterminals starting each production.  Are these requirements met?  If not, on what inputs will this parser fail?  How can we fix it?"
+        - "Typically, a scanner functions pops each token, stores it in a variable, and returns the type of constant read.  Modify this program to include a function <code>addsub</code> that pops a token and returns a constant representing the type of token found (either a <code>'+'</code> or a <code>'-'</code> character)."
+        - "Move the scanning functions to a separate <code>.c</code> file with a corresponding header, and include that header from the scanner code module and main parser code module.  Don't forget to use an <a href=\"https://en.wikipedia.org/wiki/Include_guard\">include guard</a> to ensure that the file is only included once during compilation."
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        S -> aS 
+        S -> aaS
+        ]]></script>
+      title: Limitations of LL(1) parsers: unique first productions and left factoring
+      questions:
+        - "Consider each nonterminal as a function call in a recursive descent parser.  Why is this grammar difficult to parse with an LL(1) parser?"
+        - "How might we fix this grammar?"
+        - "Draw a state machine representing the parse rules of this grammar, and describe the limitations in terms of the state machine."
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        S -> Ax
+        A -> By
+        B -> Az
+        ]]></script>
+      title: Limitations of LL(1) parsers: no left recursion
+      questions:
+        - "Consider each nonterminal as a function call in a recursive descent parser.  Why is this grammar difficult to parse with an LL(1) parser?"
+        - "How might we fix this grammar?"
+        - "Draw a state machine representing the parse rules of this grammar, and describe the limitations in terms of the state machine."        
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
          /*
@@ -428,7 +452,8 @@ info:
       title: "Generating an LR(0) Parse Table"
       questions: 
         - "Draw the state machine (the states and transitions) implemented by this LR(0) parse table."
-        - "Augment the grammar and generate an LR(0) parse table for the grammar <code>S -> XX; X -> xXy; X -> x; X -> y</code>"        
+        - "Augment the grammar and generate an LR(0) parse table for the grammar <code>S -> XX; X -> xXy; X -> x; X -> y</code>"
+        - "Notice that each state of the machine can have duplicate transitions.  The state machine of an LR parser allows states to represent multiple possible parser rules.  Why is this acceptable in an LR parser but required a revision to the grammar of an LL(1) parser, even though both can be represented with Deterministic Finite Automata?  Specifically, why must we revise the underlying LL(1) grammar even though we could simply convert the Nondeterministic Finite Automaton into a Deterministic Finite Automaton by combining states via the transitive closure, as we do with an LR parser and grammar?  (As a hint - it has something to do with the 1 in LL(1)!)"
     - model: |
         <a href="https://en.wikipedia.org/wiki/LR_parser#Bottom-up_parse_steps_for_example_A*2_+_1"><img alt="Wikipedia" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Shift-Reduce_Parse_Steps_for_A%2A2%2B1.svg/512px-Shift-Reduce_Parse_Steps_for_A%2A2%2B1.svg.png"></a>
         <br>
@@ -607,7 +632,12 @@ info:
         - "Click on the image to see the steps involved with parsing <code>A*2 + 1</code>."
         - "Describe these steps in terms of the LR(0) parse table."
         - "What does the L, R, and 0 refer to in LR(0)?"
-        
+  additional_reading:
+    - title: "A BASIC Language Interpreter with lex and yacc"
+      link: "https://www.viscerallogic.com/programming/blog/basic-interpreter-part-i/"
+    - title: "A simple language interpreter with lex and yacc"
+      link: "https://github.com/MJ10/Yet-Another-Programming-Language"
+      
 tags:
   - parser
   - interpreter

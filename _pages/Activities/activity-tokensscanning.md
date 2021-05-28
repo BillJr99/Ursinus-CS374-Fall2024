@@ -43,8 +43,10 @@ info:
       title: Scanning Lexemes for Tokens with flex
       questions:
         - "What is a lexeme?  What is a token?"
-        - "Describe an algorithm to read a <code>String</code> from left to right, returning tokens as they are identified."
+        - "Describe an algorithm to read a <code>String</code> from left to right, returning tokens as they are identified.  What familiar programming construct or paradigm do you see (hint - look at the loop, conditional, and check for the current character!)?"
         - "How would you modify this scanner configuration to support an assignment operator and an identifier (variable) token?"
+        - "Notice the actual text of the token is not typically returned directly by the scanner.  Rather, it is stored in a variable (here, <code>yylval</code>).  What is returned instead, and why not simply return <code>yytext</code> directly?"
+        - "Sketch the symbol table for the lexemes above.  For each token type, assign a constant value to the type, and describe the type and format of the resulting token value."
       
 tags:
   - tokens

@@ -493,11 +493,7 @@ schedule:
   title: "Parsing Workshop"   
 - week: "14"
   date: "1"
-  title: "Abstract Syntax Trees" 
-  link: "./Activities/AST"      
-  readings:
-  - rtitle: "Compilers Ch. 6"
-    rlink: false   
+  title: "Parsing Workshop" 
   deliverables:   
   - dtitle: "Participation: Second Self-Assessment Due"
     dlink: "./Assignments/Participation/SelfAssessment"
@@ -505,7 +501,11 @@ schedule:
     submission_types: "written"        
 - week: "15"
   date: "0"
-  title: "Review" 
+  title: "Abstract Syntax Trees and Review" 
+  link: "./Activities/AST" 
+  readings:
+  - rtitle: "Compilers Ch. 6"
+    rlink: false     
   deliverables:
   - dtitle: "Lab: Parsing Due"
     dlink: "./Labs/Parser"

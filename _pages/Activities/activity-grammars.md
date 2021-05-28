@@ -83,6 +83,7 @@ info:
         - "What does this language produce?"
         - "How can this be modified to specify a language that accepts <code>String</code>s of <code>n</code> a characters followed by <code>n</code> b characters?"
         - "How might we parse a grammar?  How can we make it easy to parse a grammar?  For example, would it help if every production began with a unique terminal?"
+        - "Modify the above grammar to match all sets of balanced parenthesis, for example: <code>(())</code> but not <code>())</code>."
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
          selection-statement:
@@ -103,6 +104,7 @@ info:
       title: "Ambiguous Grammars"
       questions:
         - "How might <code>selection-statement</code> lead to a dangling else block ambiguity in a nested if statement?"
+        - "When your parser reaches en <code>ELSE</code> token, should it resolve the prior <code>IF</code> statement or continue parsing as part of this inner nested <code>IF</code> clause?  This is known as a <strong>shift-reduce</code> conflict."
         - "How is the ambiguity resolved using the <code>open_statement</code> instead?"
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
@@ -114,7 +116,7 @@ info:
         ]]></script> 
       title: "An Example Grammar with an Ambiguity"
       questions:
-        - "What are two different ways in which the expression <code>8*9+5</code> can be parsed into a parse tree?  What does each parse tree look like?"
+        - "What are two different ways in which the expression <code>8*9+5</code> can be parsed into a parse tree?  What does each parse tree look like?  This is another example of a shift-reduce conflict resulting from an ambiguous grammar."
         - "Can the resulting computed values be different as a result of this ambiguity?"
         - "How can we resolve this ambiguity?"
     - model: |
@@ -129,7 +131,8 @@ info:
         ]]></script> 
       title: "An Example Grammar without an Ambiguity"
       questions:
-        - "How would the expression <code>8*9+5</code> be parsed into a parse tree?  How about <code>5+8*9</code>?"
+        - "How would the expression <code>8*9+5</code> be parsed into a parse tree?  How about <code>5+8*9</code>?  Draw each parse tree."
+        - "Traditional order-of-operations dictates that division and multiplication resolve prior to addition and subtraction.  Where does the multiplication occur within this parse tree, and why is this position important to ensure that these operators resolve prior to the addition?"
         - "Given an ambiguous grammar, is there an algorithm that can disambiguate it, or do we have to design against the ambiguity up front?  Why or why not?"
   additional_reading:
     - title: "Formal Languages Notes"

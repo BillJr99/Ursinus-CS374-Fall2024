@@ -35,6 +35,7 @@ info:
       questions:
         - "What pattern of A and B would take one from Shipwreck Bay to Treasure Island?"
         - "What regular expression automatically checks that a series of navigational guesses would lead from Shipwreck Bay to Treasure Island?  Note that <code>[AB]</code> means to match either character A or B once."
+        - "Suppose one of the islands is a &quot;trap&quote;, such that once you enter, you can never leave.  How might you change the the flowchart to enforce this?"
   additional_reading:
     - title: "Regex Parser Online"
       link: "https://regex101.com/"    

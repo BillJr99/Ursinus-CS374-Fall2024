@@ -52,13 +52,18 @@ info:
         <div>
         <code>and(x, y) = y</code> when <code>x = true</code>, and <code>false</code> if <code>x = false</code>.<br>
         <code>&lambda;xy.xy false</code><br>
+        Note that when <code>x = true</code>, this corresponds to choosing the first of the two following parameters (<code>y</code> and <code>false</code>) to resolve the boolean expression to <code>y</code>.  When <code>x = false</code>, we choose the second of the two following parameters, and obtain <code>false</code>.<br>
+        Finally, substitute <code>&lambda;ab.b</code> for <code>false</code>.
         <code>&lambda;xy.xy &lambda;ab.b</code>
         </div>
         </div>
       title: Boolean Constructions with the Lambda Calculus
       questions:
         - "Verify the behavior of <code>not false</code> using the lambda expression above."     
-        - "All boolean expressions can be constructed using the NAND operator.  What is the lambda expression for NAND, which is (NOT AND x y)?" 
+        - "All boolean expressions can be constructed using the <code>NAND</code> operator.  What is the lambda expression for <code>NAND</code>, which is <code>(NOT AND x y)</code>?" 
+        - "Derive the boolean expression for <code>A OR B</code>, given that <code>A OR B</code> is <code>true</code> when <code>A</code> is <code>true</code>, and <code>B</code> otherwise." 
+        - "Draw a truth table for the <code>XOR</code> operator.  What is the result when <code>A</code> is <code>true</code>?  How about when <code>A</code> is <code>false</code>?  Derive the lambda expression for <code>XOR</code>."
+        - "Draw a truth table for the <code>equals</code> operator.  What is its boolean expression?  Derive its lambda expression."
     - model: |
         <div align="left">
         <code>let 0 = &lambda;n(&lambda;z.z)</code><br>
