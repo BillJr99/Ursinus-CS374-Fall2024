@@ -5,8 +5,8 @@ title: "CS374: Programming Language Principles - Parsers and Interpreters"
 excerpt: "CS374: Programming Language Principles - Parsers and Interpreters"
 
 info: 
-  prev: ./ParserInterpreter4
-  next: ./ParserInterpreter2
+  prev: ./ParserInterpreter2
+  next: ./ParserInterpreter4
   goals: 
     - To describe the components of an LL(k) parser
     - To implement a simple parser given a grammar, from code or using tools such as lex and yacc
