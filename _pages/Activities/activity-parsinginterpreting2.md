@@ -16,7 +16,7 @@ info:
         S -> aS 
         S -> aaS
         ]]></script>
-      title: Limitations of LL(1) parsers: unique first productions and left factoring
+      title: "Limitations of LL(1) parsers: unique first productions and left factoring"
       questions:
         - "Consider each nonterminal as a function call in a recursive descent parser.  Why is this grammar difficult to parse with an LL(1) parser?"
         - "How might we fix this grammar?"
@@ -27,7 +27,7 @@ info:
         A -> By
         B -> Az
         ]]></script>
-      title: Limitations of LL(1) parsers: no left recursion
+      title: "Limitations of LL(1) parsers: no left recursion"
       questions:
         - "Consider each nonterminal as a function call in a recursive descent parser.  Why is this grammar difficult to parse with an LL(1) parser?"
         - "How might we fix this grammar?"

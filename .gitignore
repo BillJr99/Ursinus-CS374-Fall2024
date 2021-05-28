@@ -4,4 +4,6 @@ updatecalendar.sh
 geckodriver.log
 files/private/**
 do-jekyll.sh
-Gemfile
+Gemfile*
+_site
+.sass-cache
