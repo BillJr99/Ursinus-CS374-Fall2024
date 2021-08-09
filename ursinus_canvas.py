@@ -76,6 +76,12 @@ def rchop(s, suffix):
         return s[:-len(suffix)]
     return s
     
+# https://stackoverflow.com/questions/16891340/remove-a-prefix-from-a-string
+def lchop(text, prefix):
+    if text.startswith(prefix):
+        return text[len(prefix):]
+    return text   
+    
 def stripnobool(val):
     if type(val) is bool:
         result = ""
@@ -374,6 +380,18 @@ def getCourseDate(startdate, weeknum, dayidx, M, T, W, R, F, S, U, tostring=True
     else:
         return dt
     
+# Assumes the quiz has already been added to the shell with a name that matches the parameter
+def find_quiz_by_title(course, quiz_name):
+    quizzes = course.get_quizzes()
+    
+    for quiz in quizzes:
+        if quiz['title'] == quiz_name:
+            print("Found quiz: " + quiz['title'] + " while searching for: " + quiz_name)
+        
+            return quiz
+            
+    return None # not found
+    
 # Create Assignment Shells: https://canvasapi.readthedocs.io/en/stable/examples.html#create-an-assignment
 def create_assignment(course, inputdict):
     if skipassignments:
@@ -382,6 +400,10 @@ def create_assignment(course, inputdict):
     asmt = course.create_assignment(inputdict)
     
     return asmt
+    
+def edit_quiz(quiz, inputdict):
+    newquiz = quiz.edit(**inputdict)
+    return newquiz
     
 # Create a Rubric
 # https://canvas.instructure.com/doc/api/rubrics.html
@@ -778,6 +800,29 @@ def process_markdown(fname, canvas, course, courseid, homepage):
                     inputdict['content_id'] = assignmentid
                     inputdict['published'] = True
                     add_module_item(module, inputdict)
+                elif ('quiz:' in description.lower()):
+                    input("Import the QTI for this quiz and press enter to continue: " + description)
+                    quiz_name = lchop(description, "Quiz: ")
+                    quiz = find_quiz_by_title(course, quiz_name)
+                    if not (quiz is None):
+                        duedate = getCourseDate(startdate, weekidx, dayidx, isM, isT, isW, isR, isF, isS, isU, tostring=False)
+                        duedate = getDateString(adddays(duedate, DUE_DATE_OFFSET)) # offset the due date as needed for the due time which is in UTC
+                        
+                        inputdict = {}
+                        inputdict['due_at'] = parseDateTimeCanvas(datetime.strptime(duedate + DUE_TIME, DUE_DATE_FORMAT)) 
+                        inputdict['lock_at'] = parseDateTimeCanvas(datetime.strptime(enddate.replace('/', '') + DUE_TIME, DUE_DATE_FORMAT)) # lock out assignments on the last day of the class
+                        
+                        # Get all the assignment groups, and find the one for quizzes, so that we can move this quiz assignment to that assignment group.
+                        groups = course.get_assignment_groups()
+                        group = get_assignment_group_containing_label(groups, 'Quiz') 
+                        
+                        if not (group is None):
+                            groupid = group.id
+                            inputdict['assignment_group_id'] = groupid
+                        
+                        edit_quiz(quiz, inputdict)
+                    else:
+                        print("Warning: quiz " + quiz_name + " not found.")
                 else:
                     # Create a Module Entry for the Deliverable
                     inputdict = {}
@@ -928,8 +973,9 @@ def process_markdown(fname, canvas, course, courseid, homepage):
             
         add_assignments_to_groups(course, postdict)
         
-        # Delete the default Assignments gradebook group
+        # Delete the default Assignments and Imported Assignments gradebook groups
         delete_assignment_group_by_name(course, "Assignments")        
+        delete_assignment_group_by_name(course, "Imported Assignments") 
 
 def get_courseid(canvas, user):
     courses = user.get_courses()
