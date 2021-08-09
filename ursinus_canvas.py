@@ -459,10 +459,16 @@ def add_assignments_to_groups(course, postdict):
     # Get all the assignment groups
     groups = course.get_assignment_groups()
     
+    # If the assignment is already in the quiz group due to an import, don't move it
+    quizgroup = get_assignment_group_containing_label(groups, 'Quiz') 
+    
     # If Lab, Project, Assignment (etc...) is in the name, add it to the weight column with Lab, Project, or Assignment (etc...) in the name (you can prefix a deliverable name with the name of a grade breakdown column and it will add to that as well)
     for assignment in assignments:
         name = assignment.name
         asmtid = assignment.id
+        asmtgroup = assignment.assignment_group_id
+        
+        group = None
         
         if 'Lab:' in name:
             group = get_assignment_group_containing_label(groups, 'Lab')
@@ -476,8 +482,8 @@ def add_assignments_to_groups(course, postdict):
             group = get_assignment_group_containing_label(groups, 'Exercise')
         elif 'Participation:' in name:
             group = get_assignment_group_containing_label(groups, 'Participation') 
-        elif 'Quiz:' in name:
-            group = get_assignment_group_containing_label(groups, 'Quiz') 
+        elif 'Quiz:' in name or asmtgroup == quizgroup:
+            group = quizgroup
         else:
             if 'grade_breakdown' in postdict:
                 for breakdown in postdict['grade_breakdown']:        
