@@ -20,9 +20,11 @@ info:
   course_description: "Syntax, processors, representations and styles of programming languages. Study and comparison of several modern programming languages. Prerequisite: A grade of C– or higher in CS-174. Offered in the spring of odd years. Three hours per week. Four semester hours."
   welcome_message: "Welcome to CS374!"
   zoom:
-  - section:
-      zoomlink: "https://ursinus-edu.zoom.us/j/91230746124"
-      phonenumberlink: "https://ursinus-edu.zoom.us/u/ab7LUuF9Xz"
+    zoomrecordings: "Panopto on Canvas"
+    links:
+    - section:
+        zoomlink: "https://ursinus-edu.zoom.us/j/91230746124"
+        phonenumberlink: "https://ursinus-edu.zoom.us/u/ab7LUuF9Xz"
   class_meets_days:
     isM: true
     isT: false
