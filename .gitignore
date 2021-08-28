@@ -7,3 +7,5 @@ do-jekyll.sh
 Gemfile*
 _site
 .sass-cache
+*.sh
+_pages/Quizzes/qti*
