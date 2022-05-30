@@ -527,7 +527,7 @@ university:
     kdisplay: false
   spring:
   - kname: "Add Deadline"
-    kdate: "2023/02/1"
+    kdate: "2023/02/01"
     kdisplay: true
   - kname: "Drop with a W Deadline"
     kdate: "2023/03/23"
