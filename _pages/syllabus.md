@@ -11,20 +11,13 @@ info:
   course_title: "Principles of Programming Languages"
   credit_hours: "4 Semester Hours"
   course_homepage: "https://www.billmongan.com/Ursinus-CS374-Spring2021/"
-  teamshelproom: https://teams.microsoft.com/l/channel/19%3a6ddddb88493946fa956387e9543a3b06%40thread.tacv2/Mongan%2520Drop-In%2520Office%2520Hours?groupId=b16dcd6b-3522-4564-8306-9051a92c68ba&tenantId=921f1c03-8689-4e60-a722-f5ea581e00fe
-  class_notebook: https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS374%20Spring%202021
+  class_notebook: https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS374%20Fall%202022
   ical: files/CS374.ics
   course_prerequisites: "CS174 with a grade of C- or higher."
-  course_start_date: "2021/01/18"
-  course_end_date: "2021/05/05"
+  course_start_date: "2022/08/29"
+  course_end_date: "2022/12/09"
   course_description: "Syntax, processors, representations and styles of programming languages. Study and comparison of several modern programming languages. Prerequisite: A grade of C– or higher in CS-174. Offered in the spring of odd years. Three hours per week. Four semester hours."
   welcome_message: "Welcome to CS374!"
-  zoom:
-    zoomrecordings: "Panopto on Canvas"
-    links:
-    - section:
-        zoomlink: "https://ursinus-edu.zoom.us/j/91230746124"
-        phonenumberlink: "https://ursinus-edu.zoom.us/u/ab7LUuF9Xz"
   class_meets_days:
     isM: true
     isT: false
@@ -38,25 +31,25 @@ info:
     - day: "M"
       starttime: "9:00 AM"
       endtime: "9:50 AM"
-      place: "Kaleidoscope"
+      place: "Pfahler 012"
     - day: "W"
       starttime: "9:00 AM"
       endtime: "9:50 AM"
-      place: "Kaleidoscope"
+      place: "Pfahler 012"
     - day: "F"
       starttime: "9:00 AM"
       endtime: "9:50 AM"
-      place: "Kaleidoscope"
+      place: "Pfahler 012"
   midtermexam: 
-    - mdate: "2021/02/26"
-      mstarttime: "9:00 AM"
-      mendtime: "9:50 AM"
-      mroom: "Regular Class Period"      
+    - mdate: "TBD"
+      mstarttime: "TBD"
+      mendtime: "TBD"
+      mroom: "TBD"      
   finalexam: 
-    - fdate: "2021/05/08"
-      fstarttime: "9:00 AM"
-      fendtime: "12:00 PM"
-      froom: "REMOTE"
+    - fdate: "TBD"
+      fstarttime: "TBD"
+      fendtime: "TBD"
+      froom: "TBD"
   flexible_submission_policy: "In the absence of <a href=\"#accommodations\">accommodations</a> arranged in advance with the instructor or college, all assignments are due at 10:59PM Eastern Time on the date(s) stated on the schedule.  Assignments will be accepted without prior permission following this time with a points deduction of 4% per day if submitted before 10:59 PM Eastern Time on the day submitted.  Each student will receive a total of 10 &quot;slack days&quot; for the semester with which to waive these grade reductions; for example, one assignment may be submitted 10 days late, or two assignments may be submitted 5 days late, with no grade reduction.  Sould an exemption to this policy be requested and granted, a 5% per day reduction will be applied.  Extra credit will not be awarded for assignments submitted under the flexible submission policy.  Students with accommodations will receive additional &quot;slack days&quot; as specified within the accommodations letter; however, some deliverables cannot be subject to accommodations due to the time-sensitive nature of the assignment (for example, group assignments, presentations, and course surveys).  Students who add the class late shall receive additional slack days equal to the number of days between the start of classes and the first date that approval is given or that class is attended (whichever occurs first).  Under no circumstances (including accommodations) can late work be accepted after the final class meeting, nor during final exams week, nor after the exam." 
   late_penalty_per_period: 4
   late_penalty_period: "day"
@@ -85,33 +78,25 @@ instructors:
   picture: /images/profile.png
   officehours:
   - day: "M"
-    starttime: "5:00 PM"
-    endtime: "6:00 PM"
-    location: "Virtual Office Hours on Microsoft Teams Help Room"  
-  - day: "T"
-    starttime: "9:00 AM"
-    endtime: "10:50 AM"
-    location: "Virtual Office Hours on Microsoft Teams Help Room"   
-  - day: "T"
-    starttime: "2:00 PM"
-    endtime: "3:00 PM"
-    location: "Virtual Office Hours on Microsoft Teams Help Room"       
-  - day: "W"
-    starttime: "5:00 PM"
-    endtime: "6:00 PM"
-    location: "Virtual Office Hours on Microsoft Teams Help Room"
-  - day: "R"
-    starttime: "9:00 AM"
-    endtime: "10:00 AM"
-    location: "Virtual Office Hours on Microsoft Teams Help Room"    
-  - day: "R"
     starttime: "11:00 AM"
     endtime: "12:00 PM"
-    location: "Virtual Office Hours on Microsoft Teams Help Room"        
+    location: "Pfahler 101L"  
+  - day: "T"
+    starttime: "9:00 AM"
+    endtime: "9:50 AM"
+    location: "Pfahler 101L"   
+  - day: "T"
+    starttime: "11:00 AM"
+    endtime: "12:00 PM"
+    location: "Pfahler 101L"        
+  - day: "W"
+    starttime: "11:00 AM"
+    endtime: "12:00 PM"
+    location: "Pfahler 101L"        
   - day: "F"
-    starttime: "1:30 PM"
-    endtime: "3:30 PM"
-    location: "Virtual Office Hours on Microsoft Teams Help Room"      
+    starttime: "11:00 AM"
+    endtime: "12:00 PM"
+    location: "Pfahler 101L"     
     
 textbooks:
 - title: "Programming Language Concepts"
@@ -191,7 +176,7 @@ letter_grades:
 
 schedule:
 - week: "0"
-  date: "1"
+  date: "0"
   title: "Course Overview"
   link: "../Ursinus-CS374-Overview"
   deliverables:  
@@ -200,7 +185,7 @@ schedule:
     points: 10   
     submission_types: "noupload"            
 - week: "0"
-  date: "2"
+  date: "1"
   title: "History of Programming Languages"
   link: "../Ursinus-CS374-History"
   deliverables:
@@ -208,14 +193,14 @@ schedule:
     dlink: "./Assignments/Participation/PreAssessment"
     points: 10  
     submission_types: "written"            
-- week: "1"
-  date: "0"
+- week: "0"
+  date: "2"
   title: "History of Programming Languages"  
   readings:
   - rtitle: "PLC Ch. 1"
     rlink: false  
 - week: "1"
-  date: "1"
+  date: "0"
   title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"  
   link: "./Activities/Paradigms"
   readings:
@@ -229,7 +214,7 @@ schedule:
     points: 10   
     submission_types: "noupload"            
 - week: "1"
-  date: "2"
+  date: "1"
   title: "Functional Programming"
   deliverables:
   - dtitle: "Participation: Pre-Assessment Due"
@@ -244,14 +229,14 @@ schedule:
     rlink: false  
   - rtitle: "The Scheme Programming Language"
     rlink: "https://www.scheme.com/tspl3/"
-- week: "2"
-  date: "0"
+- week: "1"
+  date: "2"
   title: "Functional Programming"    
 - week: "2"
-  date: "1"
+  date: "0"
   title: "Functional Programming" 
 - week: "2"
-  date: "2"
+  date: "1"
   title: "Functional Programming" 
   deliverables:
   - dtitle: "Lab: Shell Due"
@@ -260,14 +245,14 @@ schedule:
   - dtitle: "Programming Assignment: Functional Programming Handed Out"
     dlink: "./Assignments/Functional"
     points: 100        
-- week: "3"
-  date: "0"
+- week: "2"
+  date: "2"
   title: "Logic Programming"  
   readings:
   - rtitle: "PLC Ch. 8"
     rlink: false   
 - week: "3"
-  date: "1"
+  date: "0"
   title: "Scripting Languages" 
   readings:
   - rtitle: "Bash Syntax Reference"
@@ -277,10 +262,10 @@ schedule:
   - rtitle: "Bash Scripting Video"
     rlink: "https://youtube.com/watch?v=e7BufAVwDiM"  
 - week: "3"
-  date: "2"
+  date: "1"
   title: "Scripting Languages"       
-- week: "4"
-  date: "0"
+- week: "3"
+  date: "2"
   title: "Syntax and Semantics"
   link: "./Activities/Syntax"
   readings:
@@ -294,14 +279,14 @@ schedule:
     dlink: "./Assignments/Scripting"
     points: 100     
 - week: "4"
-  date: "1"
+  date: "0"
   title: "Bindng and Scope" 
   link: "./Activities/BindingScope" 
 - week: "4"
-  date: "2"
+  date: "1"
   title: "Bindng and Scope"
-- week: "5"
-  date: "0"
+- week: "4"
+  date: "2"
   title: "Regular Expressions"
   link: "./Activities/Regex"
   readings:
@@ -310,7 +295,7 @@ schedule:
   - rtitle: "Regular Expressions Video"
     rlink: "https://youtube.com/watch?v=528Jc3q86F8"    
 - week: "5"
-  date: "1"
+  date: "0"
   title: "Regular Expressions"   
   deliverables:
   - dtitle: "Midterm Exam: Midterm Handed Out"
@@ -318,7 +303,7 @@ schedule:
     points: 100   
     submission_types: "written"        
 - week: "5"
-  date: "2"
+  date: "1"
   title: "Finite Automata"
   link: "./Activities/Automata"
   readings:
@@ -330,8 +315,8 @@ schedule:
   - dtitle: "Programming Assignment: Shell Scripting Due"
     dlink: "./Assignments/Scripting"
     points: 100  
-- week: "6"
-  date: "0"
+- week: "5"
+  date: "2"
   title: "Finite Automata"   
   deliverables:
   - dtitle: "Participation: First Self-Assessment Handed Out"
@@ -343,14 +328,14 @@ schedule:
     points: 100   
     submission_types: "written"            
 - week: "6"
-  date: "2"
+  date: "0"
   title: "Finite Automata"  
   deliverables: 
   - dtitle: "Programming Assignment: Regular Expressions Handed Out"
     dlink: "./Assignments/Regex"
     points: 100      
-- week: "7"
-  date: "0"
+- week: "6"
+  date: "1"
   title: "Data Types"  
   link: "./Activities/Types"
   deliverables:
@@ -363,27 +348,27 @@ schedule:
     rlink: false      
   - rtitle: "Compilers Ch. 7"
     rlink: false    
-- week: "7"
-  date: "1"
+- week: "6"
+  date: "2"
   title: "Data Types"     
 - week: "7"
-  date: "2"
+  date: "0"
   title: "Code Structure" 
   link: "./Activities/CodeStructure"
   readings:
   - rtitle: "PLC Ch. 4"
     rlink: false  
-- week: "8"
-  date: "0"
-  title: "Code Structure: Expressions and Conditionals"
-- week: "8"
+- week: "7"
   date: "1"
+  title: "Code Structure: Expressions and Conditionals"
+- week: "7"
+  date: "2"
   title: "Code Structure: Functions, Exceptions, and Memory Management"
   readings:
   - rtitle: "Compilers Ch. 9"
     rlink: false   
 - week: "8"
-  date: "2"
+  date: "0"
   title: "Data Structures and Generics"  
   link: "./Activities/DataStructures"
   readings:
@@ -396,8 +381,8 @@ schedule:
   - dtitle: "Programming Assignment: Automata Handed Out"
     dlink: "./Assignments/Automata"
     points: 100    
-- week: "9"
-  date: "0"
+- week: "8"
+  date: "1"
   title: "The Lambda Calculus"
   link: "./Activities/LambdaCalculus"
   readings:
@@ -405,8 +390,8 @@ schedule:
     rlink: "https://plato.stanford.edu/entries/lambda-calculus/" 
   - rtitle: "Lambda Calculus Video"
     rlink: "https://youtube.com/watch?v=3VQ382QG-y4"    
-- week: "9"
-  date: "1"
+- week: "8"
+  date: "2"
   title: "The Compilation / Linking Process and Bytecode"  
   link: "./Activities/CompilerLinker"
   readings:
@@ -417,11 +402,11 @@ schedule:
   - rtitle: "Static and Dynamic Linking Video"
     rlink: "https://youtube.com/watch?v=UdMRcJwvWIY"   
 - week: "9"
-  date: "2"
+  date: "0"
   title: "Libraries"
   link: "./Activities/Libraries"
-- week: "10"
-  date: "0"
+- week: "9"
+  date: "1"
   title: "Grammars"   
   link: "./Activities/Grammars"
   readings:
@@ -434,17 +419,17 @@ schedule:
   - dtitle: "Programming Assignment: Libraries Handed Out"
     dlink: "./Assignments/Libraries"
     points: 100     
-- week: "10"
+- week: "9"
   date: "2"
   title: "Grammars"        
-- week: "11"
+- week: "10"
   date: "0"
   title: "Ambiguity in Grammars"    
-- week: "11"
+- week: "10"
   date: "1"
   title: "Tokens and Scanning"
   link: "./Activities/TokensScanning"  
-- week: "11"
+- week: "10"
   date: "2"
   title: "Tokens and Scanning"
   deliverables:
@@ -454,17 +439,17 @@ schedule:
   - dtitle: "Lab: Scanning Handed Out"
     dlink: "./Labs/Scanner"
     points: 100     
-- week: "12"
+- week: "11"
   date: "0"
   title: "Parsing and Interpreting"   
   link: "./Activities/ParserInterpreter"  
   readings:
   - rtitle: "Compilers Ch. 4-5"
     rlink: false      
-- week: "12"
+- week: "11"
   date: "1"
   title: "Parsing and Interpreting: the LL(1) Parser" 
-- week: "12"
+- week: "11"
   date: "2"
   title: "Parsing and Interpreting"  
   deliverables:
@@ -503,8 +488,8 @@ schedule:
     dlink: "./Assignments/Participation/SelfAssessment"
     points: 10    
     submission_types: "written"        
-- week: "15"
-  date: "0"
+- week: "14"
+  date: "2"
   title: "Abstract Syntax Trees and Review" 
   link: "./Activities/AST" 
   readings:
@@ -519,80 +504,73 @@ schedule:
     points: 100  
   
 university:
-  semester: "Spring"
-  academicyear: "2020-21"
+  semester: "Fall"
+  academicyear: "2022-23"
   fall:
   - kname: "Add Deadline"
-    kdate: "2020/09/18"
+    kdate: "2022/09/10"
     kdisplay: true
   - kname: "Drop with a W Deadline"
-    kdate: "2020/11/4"
+    kdate: "2022/10/27"
     kdisplay: true  
   - kname: "Mid Semester Grades Posted"
-    kdate: "2020/10/23"
+    kdate: "2022/10/15"
     kdisplay: false
-  - kname: "2020 Transition to Remote Learning after Thanksgiving Break"
-    kdate: "2020/11/30"
+  - kname "Reading Day"
+    kdate: "2022/12/11"
     kdisplay: true
-  - kname: "Designated Thursday Schedule"
-    kdate: "2020/12/14"
-    kdisplay: true
-  - kname: "Designated Friday Schedule"
-    kdate: "2020/12/15"    
-    kdisplay: true    
   - kname: "Finals Week Begins"
-    kdate: "2020/12/16"
+    kdate: "2022/12/13"
     kdisplay: false
   - kname: "Finals Week Ends"
-    kdate: "2020/12/22"
+    kdate: "2022/12/18"
     kdisplay: false
   spring:
   - kname: "Add Deadline"
-    kdate: "2021/02/2"
+    kdate: "2023/02/1"
     kdisplay: true
   - kname: "Drop with a W Deadline"
-    kdate: "2021/03/24"
+    kdate: "2023/03/23"
     kdisplay: true
   - kname: "Mid Semester Grades Posted"
-    kdate: "2021/03/5"
+    kdate: "2023/03/4"
     kdisplay: false
-  - kname: "Designated Tuesday Schedule"
-    kdate: "2021/04/30"
-    kdisplay: true
-  - kname: "Designated Wednesday Schedule"
-    kdate: "2021/05/3"
+  - kname: "CoSA"
+    kdate: "2023/04/21"
     kdisplay: true
   - kname: "Designated Thursday Schedule"
-    kdate: "2021/05/5"
+    kdate: "2023/05/04"
+    kdisplay: true
+  - kname: "Designated Thursday Schedule"
+    kdate: "2023/05/3"
     kdisplay: true    
   - kname: "Reading Day"
-    kdate: "2021/05/6"
+    kdate: "2023/05/5"
     kdisplay: false    
   - kname: "Baccalaureate"
-    kdate: "2021/05/14"
+    kdate: "2023/05/13"
     kdisplay: false
   - kname: "Commencement"
-    kdate: "2021/05/15"
+    kdate: "2023/05/14"
     kdisplay: false
   - kname: "Finals Week Begins"
-    kdate: "2021/05/07"
+    kdate: "2023/05/06"
     kdisplay: false
   - kname: "Finals Week Ends"
-    kdate: "2021/05/13"
+    kdate: "2023/05/12"
     kdisplay: false    
   fallholidays:
-  - date: "2020/11/25"
-  - date: "2020/11/26"
-  - date: "2020/11/27" 
+  - date: "2022/11/24"
+  - date: "2022/11/25"
+  - date: "2022/11/26" 
   springholidays:
-  - date: "2021/01/18"  
-  - date: "2021/01/19"
-  - date: "2021/02/18"  
-  - date: "2021/03/3"  
-  - date: "2021/03/9"
-  - date: "2021/03/16" 
-  - date: "2021/03/31"
-  - date: "2021/04/13" 
+  - date: "2023/01/17"  
+  - date: "2023/01/18"
+  - date: "2023/03/6"  
+  - date: "2023/03/7"
+  - date: "2023/03/8" 
+  - date: "2023/03/9"
+  - date: "2023/03/10"
   
 ---
 
