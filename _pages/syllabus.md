@@ -516,7 +516,7 @@ university:
   - kname: "Mid Semester Grades Posted"
     kdate: "2022/10/15"
     kdisplay: false
-  - kname "Reading Day"
+  - kname: "Reading Day"
     kdate: "2022/12/11"
     kdisplay: true
   - kname: "Finals Week Begins"
