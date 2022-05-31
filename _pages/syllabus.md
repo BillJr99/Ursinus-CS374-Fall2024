@@ -455,7 +455,10 @@ schedule:
   deliverables:
   - dtitle: "Final Project: Project and Presentation Handed Out"
     dlink: "Projects/Final"  
-    points: 100     
+    points: 100  
+- week: "12"
+  date: "0"
+  title: "Parsing and Interpreting"  
 - week: "13"
   date: "0"
   title: "Parsing and Interpreting"    
