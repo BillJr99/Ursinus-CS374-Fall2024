@@ -352,15 +352,12 @@ schedule:
   date: "2"
   title: "Data Types"     
 - week: "7"
-  date: "0"
-  title: "Code Structure" 
+  date: "1"
+  title: "Code Structure: Expressions and Conditionals"
   link: "./Activities/CodeStructure"
   readings:
   - rtitle: "PLC Ch. 4"
-    rlink: false  
-- week: "7"
-  date: "1"
-  title: "Code Structure: Expressions and Conditionals"
+    rlink: false    
 - week: "7"
   date: "2"
   title: "Code Structure: Functions, Exceptions, and Memory Management"
@@ -563,6 +560,7 @@ university:
     kdate: "2023/05/12"
     kdisplay: false    
   fallholidays:
+  - date: "2022/10/17"
   - date: "2022/11/24"
   - date: "2022/11/25"
   - date: "2022/11/26" 
