@@ -561,6 +561,7 @@ university:
     kdisplay: false    
   fallholidays:
   - date: "2022/10/17"
+  - date: "2022/10/18"
   - date: "2022/11/24"
   - date: "2022/11/25"
   - date: "2022/11/26" 
