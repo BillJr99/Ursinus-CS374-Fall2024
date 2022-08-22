@@ -103,7 +103,7 @@ textbooks:
   authors: "Carlo Ghezzi and Mehdi Jazayeri"
   edition: "3rd Edition"
   isbn: "978-0471104261"
-  link: https://ursinus.bncollege.com/shop/BNCB_TextbookDetailView?displayStoreId=42559&urlRequestType=Base&catalogId=10001&productId=600000081387&langId=-1&partNumber=MBS_283262&storeId=42559&sectionId=100504764&item=N
+  link: https://ursinus.bncollege.com/c/Programming-Language-Concepts/p/MBS_283262_new?currentCampus=33&currentTerm=33_1_22_F&currentCourse=33_1_22_F_40_374_1
   image: https://bookinfo.mbsdirect.net/TextbookInfo/Covers/0471104264.gif
   isrequired: true 
   freelyavailable: false
