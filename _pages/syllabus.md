@@ -118,11 +118,11 @@ textbooks:
 - title: "Structure and Interpretation of Computer Programs"
   authors: "Harold Abelson and Gerald Jay Sussman with Julie Sussman"
   edition: "2nd Edition"
-  isbn: "N/A"
-  link: https://mitpress.mit.edu/sites/default/files/sicp/index.html
-  image: https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262011532%26type%3D.jpg?itok=hj8_QiVs
+  isbn: "9780262510875"
+  link: https://mitpress.mit.edu/9780262510875/structure-and-interpretation-of-computer-programs/
+  image: https://mit-press-us.imgix.net/covers/9780262510875.jpg?auto=format&w=298&dpr=1&q=20
   isrequired: false   
-  freelyavailable: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html  
+  freelyavailable: https://web.mit.edu/6.001/6.037/sicp.pdf  
 
 objectives:
 - objective: "To design a programming language by specifying tokens and a grammar"
