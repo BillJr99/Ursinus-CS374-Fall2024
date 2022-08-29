@@ -10,7 +10,7 @@ info:
   - section: "A"
   course_title: "Principles of Programming Languages"
   credit_hours: "4 Semester Hours"
-  course_homepage: "https://www.billmongan.com/Ursinus-CS374-Spring2021/"
+  course_homepage: "https://www.billmongan.com/Ursinus-CS374-Fall2022/"
   class_notebook: https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS374%20Fall%202022
   ical: files/CS374.ics
   course_prerequisites: "CS174 with a grade of C- or higher."
@@ -92,11 +92,7 @@ instructors:
   - day: "W"
     starttime: "11:00 AM"
     endtime: "12:00 PM"
-    location: "Pfahler 101L"        
-  - day: "F"
-    starttime: "11:00 AM"
-    endtime: "12:00 PM"
-    location: "Pfahler 101L"     
+    location: "Pfahler 101L"         
     
 textbooks:
 - title: "Programming Language Concepts"
