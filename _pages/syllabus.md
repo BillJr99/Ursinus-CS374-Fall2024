@@ -93,6 +93,10 @@ instructors:
     starttime: "11:00 AM"
     endtime: "12:00 PM"
     location: "Pfahler 101L"         
+  - day: "F"
+    starttime: "12:00 PM"
+    endtime: "11:00 PM"
+    location: "Pfahler 101L or IDC Lobby for Tea Time"
     
 textbooks:
 - title: "Programming Language Concepts"
