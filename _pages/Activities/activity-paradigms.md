@@ -466,12 +466,12 @@ info:
     - model: |
         <div align="left">
         <h3>Concurrency in the Go Language</h3>
-        <iframe src="https://tour.golang.org/concurrency/2" title="Concurrency in the Go Language" width="90%" height="600"></iframe>
+        <a href="https://tour.golang.org/concurrency/2">https://tour.golang.org/concurrency/2</a>
         <br>
         <h3>Non-Blocking Concurrency Channels in the Go Language</h3>
-        <iframe src="https://gobyexample.com/non-blocking-channel-operations" title="Non-Blocking Concurrency with Channels in the Go Language" width="90%" height="600"></iframe>
+        <a href="https://gobyexample.com/non-blocking-channel-operations">https://gobyexample.com/non-blocking-channel-operations</a>
         <br>
-        <iframe src="https://www.thepolyglotdeveloper.com/2017/05/network-sockets-with-the-go-programming-language/" title="Socket Programming in the Go Language" width="90%" height="600"></iframe>
+        <a href="https://www.thepolyglotdeveloper.com/2017/05/network-sockets-with-the-go-programming-language/">https://www.thepolyglotdeveloper.com/2017/05/network-sockets-with-the-go-programming-language/</a>
         </div>
       title: "Concurrent and Socket Programming in the Go Language"
       questions: 
