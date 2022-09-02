@@ -192,7 +192,7 @@ schedule:
   - dtitle: "Participation: Pre-Assessment Handed Out"
     dlink: "./Assignments/Participation/PreAssessment"
     points: 10  
-    submission_types: "written"            
+    submission_types: "written"    
 - week: "0"
   date: "2"
   title: "History of Programming Languages"  
@@ -220,10 +220,11 @@ schedule:
   - dtitle: "Participation: Pre-Assessment Due"
     dlink: "./Assignments/Participation/PreAssessment"
     points: 10 
-    submission_types: "written"        
+    submission_types: "written"  
   - dtitle: "Lab: Shell Handed Out"
     dlink: "./Labs/Shell"
-    points: 100    
+    points: 100   
+    rubricpath: "_pages/Labs/lab-shell.md"    
   readings:
   - rtitle: "PLC Ch. 7"
     rlink: false  
@@ -242,9 +243,11 @@ schedule:
   - dtitle: "Lab: Shell Due"
     dlink: "./Labs/Shell"
     points: 100  
+    rubricpath: "_pages/Labs/lab-shell.md"    
   - dtitle: "Programming Assignment: Functional Programming Handed Out"
     dlink: "./Assignments/Functional"
     points: 100        
+    rubricpath: "_pages/Assignments/asmt-functional.md"    
 - week: "2"
   date: "2"
   title: "Logic Programming"  
@@ -274,10 +277,12 @@ schedule:
   deliverables:
   - dtitle: "Programming Assignment: Functional Programming Due"
     dlink: "./Assignments/Functional"
-    points: 100     
+    points: 100 
+    rubricpath: "_pages/Assignments/asmt-functional.md"        
   - dtitle: "Programming Assignment: Shell Scripting Handed Out"
     dlink: "./Assignments/Scripting"
     points: 100     
+    rubricpath: "_pages/Assignments/asmt-scripting.md"    
 - week: "4"
   date: "0"
   title: "Bindng and Scope" 
@@ -315,6 +320,7 @@ schedule:
   - dtitle: "Programming Assignment: Shell Scripting Due"
     dlink: "./Assignments/Scripting"
     points: 100  
+    rubricpath: "_pages/Assignments/asmt-scripting.md"    
 - week: "5"
   date: "2"
   title: "Finite Automata"   
@@ -333,7 +339,8 @@ schedule:
   deliverables: 
   - dtitle: "Programming Assignment: Regular Expressions Handed Out"
     dlink: "./Assignments/Regex"
-    points: 100      
+    points: 100  
+    rubricpath: "_pages/Assignments/asmt-regex.md"        
 - week: "6"
   date: "1"
   title: "Data Types"  
@@ -375,9 +382,11 @@ schedule:
   - dtitle: "Programming Assignment: Regular Expressions Due"
     dlink: "./Assignments/Regex"
     points: 100   
+    rubricpath: "_pages/Assignments/asmt-regex.md"    
   - dtitle: "Programming Assignment: Automata Handed Out"
     dlink: "./Assignments/Automata"
     points: 100    
+    rubricpath: "_pages/Assignments/asmt-automata.md"    
 - week: "8"
   date: "1"
   title: "The Lambda Calculus"
@@ -413,9 +422,11 @@ schedule:
   - dtitle: "Programming Assignment: Automata Due"
     dlink: "./Assignments/Automata"
     points: 100  
+    rubricpath: "_pages/Assignments/asmt-automata.md"    
   - dtitle: "Programming Assignment: Libraries Handed Out"
     dlink: "./Assignments/Libraries"
     points: 100     
+    rubricpath: "_pages/Assignments/asmt-libraries.md"    
 - week: "9"
   date: "2"
   title: "Grammars"        
@@ -432,10 +443,12 @@ schedule:
   deliverables:
   - dtitle: "Programming Assignment: Libraries Due"
     dlink: "./Assignments/Libraries"
-    points: 100   
+    points: 100  
+    rubricpath: "_pages/Assignments/asmt-libraries.md"        
   - dtitle: "Lab: Scanning Handed Out"
     dlink: "./Labs/Scanner"
     points: 100     
+    rubricpath: "_pages/Labs/lab-scanner.md"        
 - week: "11"
   date: "0"
   title: "Parsing and Interpreting"   
@@ -452,7 +465,8 @@ schedule:
   deliverables:
   - dtitle: "Final Project: Project and Presentation Handed Out"
     dlink: "Projects/Final"  
-    points: 100  
+    points: 100 
+    rubricpath: "_pages/Projects/proj-final.md"            
 - week: "12"
   date: "0"
   title: "Parsing and Interpreting"  
@@ -474,9 +488,11 @@ schedule:
   - dtitle: "Lab: Scanning Due"
     dlink: "./Labs/Scanner"
     points: 100   
+    rubricpath: "_pages/Labs/lab-scanner.md"        
   - dtitle: "Lab: Parsing Handed Out"
     dlink: "./Labs/Parser"
     points: 100     
+    rubricpath: "_pages/Labs/lab-parser.md"        
 - week: "14"
   date: "0"
   title: "Parsing Workshop"   
@@ -498,7 +514,8 @@ schedule:
   deliverables:
   - dtitle: "Lab: Parsing Due"
     dlink: "./Labs/Parser"
-    points: 100         
+    points: 100        
+    rubricpath: "_pages/Labs/lab-parser.md"            
   - dtitle: "Final Project: Project and Presentation Due"
     dlink: "Projects/Final"
     points: 100  
