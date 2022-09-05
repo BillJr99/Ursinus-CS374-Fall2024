@@ -354,10 +354,7 @@ schedule:
   - rtitle: "PLC Ch. 3"
     rlink: false      
   - rtitle: "Compilers Ch. 7"
-    rlink: false    
-- week: "6"
-  date: "2"
-  title: "Data Types"     
+    rlink: false       
 - week: "7"
   date: "1"
   title: "Code Structure: Expressions and Conditionals"
