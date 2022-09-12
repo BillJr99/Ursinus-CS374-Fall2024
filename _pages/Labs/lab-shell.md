@@ -82,11 +82,13 @@ and you should see your own user directory.  Type
 to return to your home directory.
 
 ### Editing Files
-Personally, I use a program called `vim` to edit files.  There are tutorials available, like [this one](https://www.tutorialspoint.com/vim/vim_getting_familiar.htm) to learn all the features that vim provides.  There are other programs out there (for example, `emacs`).  You can install `vim` as follows:
+Personally, I use a program called `vim` to edit files.  There are tutorials available, like [this one](https://www.tutorialspoint.com/vim/vim_getting_familiar.htm) to learn all the features that vim provides.  There are other programs out there (for example, `emacs`).  You can install `vim` as follows on everthing **except** Cygwin:
 
 `sudo apt install vim`
 
 which tells your shell to install a program called `vim`, using the built-in package manager called `aptitude` or `apt`.  The `sudo` asks for the program to be run as `root`, or, in other words, in `administrator mode`.  If you try to run a command like `vim`, and the program is not installed, it will sometimes give you the `apt` command to run in order to install it first.
+
+Cygwin does not have `sudo`, so you can check the boxes to instal `vim` and `nano` when you run the Cygwin installer instead.
 
 For now, we'll use an editor called `nano`.  Type:
 
