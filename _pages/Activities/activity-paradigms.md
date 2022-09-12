@@ -268,6 +268,19 @@ info:
               
         (square (pow 5 3))
         ]]></script> 
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define sumlist 
+          (lambda(L)
+            (if (null? (cdr L))
+              (car L)
+              (+ (car L) (sumlist (cdr L))) 
+            )    
+          )  
+        )
+
+        (sumlist (list 1 2 3))
+        ]]></script> 
       title: "Declarative Languages - Functional"
       questions:
         - "What is a statement in Scheme?"
