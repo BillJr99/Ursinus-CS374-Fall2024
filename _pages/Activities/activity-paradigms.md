@@ -519,6 +519,8 @@ info:
       link: "https://web.archive.org/web/20150226152956/http://jsmapreduce.com/"
     - title: "Closures in Scheme"
       link: "https://www.artificialworlds.net/presentations/scheme-03-closures/scheme-03-closures.html"
+    - title: "QuickSort in Scheme"
+      link: "https://riptutorial.com/scheme/example/10903/quicksort"
       
 tags:
   - paradigms
