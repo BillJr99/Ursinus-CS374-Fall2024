@@ -364,6 +364,7 @@ info:
         - "Write a function to count the number of items in a list using a recursive call and a base case, using <code>czr</code> as a guide to traversing a list."
         - "Diagram the binding of the values in the call to <code>plusminus</code> to the anonymous lambda function."
         - "What is the result of the <code>map</code>/<code>apply</code> sequence?  What would happen if <code>map</code> were applied to only a single list?"
+        - "In your own words, define tail recursion.  Do you see instances of tail recursion in these examples?  Draw a call stack for one of these examples."
     - model: |
         <script type="syntaxhighlighter" class="brush: prolog"><![CDATA[
            course(CS173).
