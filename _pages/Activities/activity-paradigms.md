@@ -281,6 +281,22 @@ info:
 
         (sumlist (list 1 2 3))
         ]]></script> 
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define largest
+          (lambda(L)
+            (if (null? (cdr L))
+              (car L)
+              (if (>= (car L) (largest (cdr L)))
+                (car L)
+                (largest (cdr L))
+              )
+            )  
+          )
+        )
+
+        (largest (list 1 2 4 3))
+        ]]></script>         
       title: "Declarative Languages - Functional"
       questions:
         - "What is a statement in Scheme?"
