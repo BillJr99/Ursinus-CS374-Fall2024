@@ -302,6 +302,7 @@ info:
         - "What is a statement in Scheme?"
         - "What shared variables exist in this program?"
         - "What are some potential advantages of Functional Programming as a paradigm?" 
+        - "How might you improve upon the implementation of the <code>largest</code> function?"
     - model: |
         <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
         (define y
