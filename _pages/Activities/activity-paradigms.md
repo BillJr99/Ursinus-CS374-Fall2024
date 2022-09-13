@@ -523,6 +523,8 @@ info:
       link: "https://www.artificialworlds.net/presentations/scheme-03-closures/scheme-03-closures.html"
     - title: "QuickSort in Scheme"
       link: "https://riptutorial.com/scheme/example/10903/quicksort"
+    - title: "Implementing Python as Syntax Rules for Racket"
+      link: "https://github.com/pedropramos/PyonR/"
       
 tags:
   - paradigms
