@@ -10,6 +10,72 @@ info:
   models: 
     - model: |
         <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define L (list 'a 'b 'c))
+        (car L)
+        (cdr L)
+        
+        (define x (+ 3 2))
+        (+ x 5)
+        
+        (define add +)
+        (add 3 2)
+        ]]></script>
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define square
+          (lambda(n)
+            (* n n)
+          )
+        )
+
+        (define pow
+          (lambda(n k)
+            (if (= k 0)
+              1
+              (* n (pow n (- k 1)))
+            )
+          )
+        )
+              
+        (square (pow 5 3))
+        ]]></script> 
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define sumlist 
+          (lambda(L)
+            (if (null? (cdr L))
+              (car L)
+              (+ (car L) (sumlist (cdr L))) 
+            )    
+          )  
+        )
+
+        (sumlist (list 1 2 3))
+        ]]></script> 
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define largest
+          (lambda(L)
+            (if (null? (cdr L))
+              (car L)
+              (if (>= (car L) (largest (cdr L)))
+                (car L)
+                (largest (cdr L))
+              )
+            )  
+          )
+        )
+
+        (largest (list 1 2 4 3))
+        ]]></script>         
+      title: "Declarative Languages - Functional"
+      questions:
+        - "What is a statement in Scheme?"
+        - "What shared variables exist in this program?"
+        - "What are some potential advantages of Functional Programming as a paradigm?" 
+        - "How might you improve upon the implementation of the <code>largest</code> function?"  
+    - model: |
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
         (define y
           (lambda(m x b)
             (+ (* x m) b)))
