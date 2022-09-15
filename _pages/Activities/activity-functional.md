@@ -136,7 +136,8 @@ info:
         - "Diagram the binding of the values in the call to <code>plusminus</code> to the anonymous lambda function."
         - "What is the result of the <code>map</code>/<code>apply</code> sequence?  What would happen if <code>map</code> were applied to only a single list?"
         - "In your own words, define tail recursion.  Do you see instances of tail recursion in these examples?  Draw a call stack for one of these examples."
-        - "Compare and constrast closures and objects."     
+        - "Compare and constrast closures and objects."
+        - "Using the <code>pair?</code> directive, which returns &#35;t if the parameter is a nonempty list, add a check to one of these list recursion examples to ensure that <code>null</code> is returned if an empty list is passed."
   additional_reading:
     - title: "The Scheme Programming Language"
       link: "https://www.scheme.com/tspl3/"
