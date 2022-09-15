@@ -201,13 +201,10 @@ schedule:
     rlink: false  
 - week: "1"
   date: "0"
-  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"  
-  link: "./Activities/Paradigms"
+  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"      
   readings:
-    - rtitle: "Concise Introduction to Prolog"
-      rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
     - rtitle: "PLC Ch. 6"
-      rlink: false        
+      rlink: false     
   deliverables:
   - dtitle: "Programming Assignment: Warmup Due"
     dlink: "./Assignments/Warmup"
@@ -216,6 +213,7 @@ schedule:
 - week: "1"
   date: "1"
   title: "Functional Programming"
+  link: "./Activities/Functional"
   deliverables:
   - dtitle: "Participation: Pre-Assessment Due"
     dlink: "./Assignments/Participation/PreAssessment"
@@ -254,12 +252,16 @@ schedule:
 - week: "2"
   date: "2"
   title: "Logic Programming"  
+  link: "./Activities/Paradigms"
   readings:
-  - rtitle: "PLC Ch. 8"
-    rlink: false   
+    - rtitle: "Concise Introduction to Prolog"
+      rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"   
+    - rtitle: "PLC Ch. 8"
+      rlink: false   
 - week: "3"
   date: "0"
   title: "Scripting Languages" 
+  link: "./Activities/Paradigms"
   readings:
   - rtitle: "Bash Syntax Reference"
     rlink: "https://tiswww.case.edu/php/chet/bash/bashref.html"      
