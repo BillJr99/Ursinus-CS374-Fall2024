@@ -90,7 +90,7 @@ which tells your shell to install a program called `vim`, using the built-in pac
 
 Cygwin does not have `sudo`, so you can check the boxes to instal `vim` and `nano` when you run the Cygwin installer instead.
 
-For now, we'll use an editor called `nano`.  Type:
+If you'd like to learn `vim`, you can run the interactive tutorial `vimtutor` by typing `vimtutor` at your shell prompt and pressing return.  For now, we'll use an editor called `nano`.  Type:
 
 `nano test`
 
