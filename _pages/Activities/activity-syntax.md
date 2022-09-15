@@ -10,7 +10,7 @@ info:
     - To differentiate between syntax and semantics
   models:
     - model: |
-        <a title="via Wikimedia Commons" href="https://upload.wikimedia.org/score/7/f/7fz7p0lxt24ipwf4i11789agl7niw0r/7fz7p0lx.png"><img alt="Auld Lang Syne" src="https://upload.wikimedia.org/score/7/f/7fz7p0lxt24ipwf4i11789agl7niw0r/7fz7p0lx.png"></a>
+        <a title="via Wikimedia Commons" href="https://upload.wikimedia.org/wikipedia/commons/6/66/37_Auld_Lang_Syne.png"><img alt="Auld Lang Syne" src="https://upload.wikimedia.org/wikipedia/commons/6/66/37_Auld_Lang_Syne.png"></a>
       title: "Semiotics: Signs and Symbols"
       questions:
         - "What word arrangements can you identify in this passage, or in general prose?"
