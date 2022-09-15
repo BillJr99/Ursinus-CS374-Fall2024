@@ -239,6 +239,9 @@ schedule:
 - week: "2"
   date: "1"
   title: "Functional Programming" 
+  readings:
+  - rtitle: "Lispy - How to Write a Lisp Interpreter by Peter Norvig"
+    rlink: "http://norvig.com/lispy.html" 
   deliverables:
   - dtitle: "Lab: Shell Due"
     dlink: "./Labs/Shell"
