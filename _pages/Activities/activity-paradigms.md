@@ -4,7 +4,7 @@ permalink: /Activities/Paradigms
 title: "CS374: Programming Language Principles - Programming Paradigms"
 excerpt: "CS374: Programming Language Principles - Programming Paradigms"
 
-info: 
+info:  
   goals: 
     - To define the imperative, declarative (functional and logic), object-oriented, and scripting programming paradigms
     - To explore concurrency within programming paradigms
@@ -304,69 +304,6 @@ info:
         - "What are some potential advantages of Functional Programming as a paradigm?" 
         - "How might you improve upon the implementation of the <code>largest</code> function?"
     - model: |
-        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
-        (define y
-          (lambda(m x b)
-            (+ (* x m) b)))
-            
-        (y 5 6 7)
-        ]]></script>
-        <br>
-        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
-        (define v0 3)
-        (define t 5)
-        (define a 9.80665)
-
-        (define square
-          (lambda(n)
-            (* n n)))
-            
-        (+ (* v0 t) (* 0.5 (* a (* t t))))
-
-        (+ (* v0 t) (* 0.5 (* a (square t))))
-        ]]></script>     
-        <br>
-        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
-        (define czr
-          (lambda(l)
-            (if (null? (cdr l))
-              (car l)
-              (czr (cdr l))
-            )
-          )
-        )
-        ]]></script>  
-        <br>
-        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
-        (define plusminus 
-          (lambda(a b)
-            (
-              (lambda (x y) (list (+ x y) (- x y)))
-              a b
-            )
-          )
-        )
-
-        (plusminus 6 2)
-        ]]></script> 
-        <br>
-        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
-        (define L1 '(1 2 3))
-        (define L2 '(4 5 6))
-        (define L3 (map - L1 L2))
-        (apply + L3)
-        ]]></script>        
-      title: "The Scheme Programming Language"
-      questions: 
-        - "How are function parameters handled in Scheme?  Are they passed by value or by reference?"        
-        - "What is a function in Scheme?  How is it represented?"
-        - "What does <code>czr</code> do in your own words?"
-        - "Write a function to count the number of items in a list using a recursive call and a base case, using <code>czr</code> as a guide to traversing a list."
-        - "Diagram the binding of the values in the call to <code>plusminus</code> to the anonymous lambda function."
-        - "What is the result of the <code>map</code>/<code>apply</code> sequence?  What would happen if <code>map</code> were applied to only a single list?"
-        - "In your own words, define tail recursion.  Do you see instances of tail recursion in these examples?  Draw a call stack for one of these examples."
-        - "Compare and constrast closures and objects."
-    - model: |
         <script type="syntaxhighlighter" class="brush: prolog"><![CDATA[
            course(CS173).
            course(CS374).
@@ -511,20 +448,12 @@ info:
   additional_reading:
     - title: "Concise Introduction to Prolog"
       link: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
-    - title: "The Scheme Programming Language"
-      link: "https://www.scheme.com/tspl3/"
     - title: "Bash Syntax Reference"
       link: "https://tiswww.case.edu/php/chet/bash/bashref.html"
     - title: "Bash Scripting Tutorial"
       link: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners" 
     - title: "MapReduce"
       link: "https://web.archive.org/web/20150226152956/http://jsmapreduce.com/"
-    - title: "Closures in Scheme"
-      link: "https://www.artificialworlds.net/presentations/scheme-03-closures/scheme-03-closures.html"
-    - title: "QuickSort in Scheme"
-      link: "https://riptutorial.com/scheme/example/10903/quicksort"
-    - title: "Implementing Python as Syntax Rules for Racket"
-      link: "https://github.com/pedropramos/PyonR/"
       
 tags:
   - paradigms
