@@ -138,6 +138,7 @@ info:
         - "In your own words, define tail recursion.  Do you see instances of tail recursion in these examples?  Draw a call stack for one of these examples."
         - "Compare and constrast closures and objects."
         - "Using the <code>pair?</code> directive, which returns <code>&#35;t</code> if the parameter is a nonempty list, add a check to one of these list recursion examples to ensure that <code>null</code> is returned if an empty list is passed."
+        - "Write a function that accepts a list and an operator as parameters, such as addition.  Apply that operator to the whole list recursively; for example, if the operator is the addition operator, return the sum of the list.  If it is the multiplication operator, return the product of all items in the list."
   additional_reading:
     - title: "The Scheme Programming Language"
       link: "https://www.scheme.com/tspl3/"
