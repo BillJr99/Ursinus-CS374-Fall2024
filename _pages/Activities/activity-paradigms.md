@@ -240,7 +240,7 @@ info:
     - model: |
         <script type="syntaxhighlighter" class="brush: prolog"><![CDATA[
            course(CS173).
-           course(CS374).
+           course(CS174).
            course(CS374).
            course(CS475).
            
