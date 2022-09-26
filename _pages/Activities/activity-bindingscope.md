@@ -36,6 +36,7 @@ info:
       questions:
         - "Can <code>foo</code> be re-assigned at runtime?  Would you say that it is statically or dynamically bound to its value?  How about <code>x</code>?"
         - "Do you think this is true of every language?"
+        - "What do you suppose is the difference between <strong>lexical scope</strong> and <strong>dynamic scope</strong>?"
         - "How many bindings are there of the identifier <code>x</code>?  If <code>x</code> is staically bound, it must be resolved by the compiler at compile time.  How is the correct value obtained at each reference?" 
         - "What would happen if <code>x</code> is re-declared in <code>foo</code> after it has already been declared in languages like C and Java that specify and insist on proper types (these are called strongly typed languages)?"
     - model: |
