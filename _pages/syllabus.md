@@ -201,7 +201,8 @@ schedule:
     rlink: false  
 - week: "1"
   date: "0"
-  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"      
+  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"   
+  link: "./Activities/Paradigms"
   readings:
     - rtitle: "PLC Ch. 6"
       rlink: false     
