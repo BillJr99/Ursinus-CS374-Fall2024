@@ -128,7 +128,7 @@ DTSTAMP:20220905T000000Z
 DTSTART;VALUE=DATE:20220905
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:\nReading: PLC Ch. 6\nDeliverable: Programming Assignment: Warmup Due https://www.billmongan.com/Ursinus-CS374-Fall2022/./Assignments/Warmup
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2022/./Activities/Paradigms\nReading: PLC Ch. 6\nDeliverable: Programming Assignment: Warmup Due https://www.billmongan.com/Ursinus-CS374-Fall2022/./Assignments/Warmup
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
