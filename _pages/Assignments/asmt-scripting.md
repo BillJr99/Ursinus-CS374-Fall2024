@@ -67,6 +67,26 @@ To use the `cut` command, you can do the following:
 
 which obtains the second field (`tube`) from the line of text, using the delimiter `,`.  
 
+### Summary
+
+In short, you can generate your database of file hashes within your directory by executing this command first in your script:
+
+```
+`find . -type 'f' -exec md5sum {} \; >db.txt 2>/dev/null`
+```
+
+Then, you can convert your data file to be comma delimited to make parsing easier by looping over each line in this file:
+
+```
+# you may wish to remove md5dict.txt before running this script
+cat db.txt | while IFS= read -r line
+do
+  # set a variable to the first cut field (the hash)
+  # set a variable to the second cut field (the filename)
+  # echo the filename, a comma, and the hash, and append that to a new md5dict.txt file
+done
+```
+
 Arrange your command(s) to compute the MD5 hash into a shell script and test it.  Write the following line as the first line of your script file, so that your computer knows it is a `bash` script:
 
 ```
