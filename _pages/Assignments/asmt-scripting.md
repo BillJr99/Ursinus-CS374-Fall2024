@@ -72,7 +72,7 @@ which obtains the second field (`tube`) from the line of text, using the delimit
 In short, you can generate your database of file hashes within your directory by executing this command first in your script:
 
 ```
-`find . -type 'f' -exec md5sum {} \; >db.txt 2>/dev/null`
+find . -type 'f' -exec md5sum {} \; >db.txt 2>/dev/null
 ```
 
 Then, you can convert your data file to be comma delimited to make parsing easier by looping over each line in this file:
