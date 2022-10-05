@@ -109,7 +109,7 @@ Finally, we need to see if any new files were created.  Use a `find` command to 
 To find all files in your directory and loop over each one, you can use this snippet:
 
 ```
-find . -print0 | while IFS= read -r -d '' line; do 
+find . -print0 -type 'f' | while IFS= read -r -d '' line; do 
     # Your code here, which can use the ${line} variable
 done
 ```
