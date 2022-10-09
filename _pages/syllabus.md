@@ -403,20 +403,20 @@ schedule:
     dlink: "./Assignments/Participation/SelfAssessment"
     points: 10  
     submission_types: "written"              
-  readings:
-  - rtitle: "Compilers Ch. 2, 8"
-    rlink: false 
-  - rtitle: "How the Linker Works Video"
-    rlink: "https://youtube.com/watch?v=oXk87NRTL1Y"
-  - rtitle: "Static and Dynamic Linking Video"
-    rlink: "https://youtube.com/watch?v=UdMRcJwvWIY"   
 - week: "9"
   date: "0"
   title: "The Lambda Calculus"
 - week: "9"
   date: "1"
   title: "The Compilation / Linking Process and Bytecode"  
-  link: "./Activities/CompilerLinker"    
+  link: "./Activities/CompilerLinker" 
+  readings:
+  - rtitle: "Compilers Ch. 2, 8"
+    rlink: false 
+  - rtitle: "How the Linker Works Video"
+    rlink: "https://youtube.com/watch?v=oXk87NRTL1Y"
+  - rtitle: "Static and Dynamic Linking Video"
+    rlink: "https://youtube.com/watch?v=UdMRcJwvWIY"     
   deliverables:
   - dtitle: "Programming Assignment: Automata Due"
     dlink: "./Assignments/Automata"
