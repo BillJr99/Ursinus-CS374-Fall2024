@@ -440,7 +440,7 @@ schedule:
     rlink: false    
 - week: "10"
   date: "1"
-  title: "Grammars"  
+  title: "Grammars and Ambiguity"  
 - week: "10"
   date: "2"
   title: "Tokens and Scanning"
