@@ -274,12 +274,8 @@ schedule:
   date: "1"
   title: "Scripting Languages"       
 - week: "3"
-  date: "2"
-  title: "Syntax and Semantics"
-  link: "./Activities/Syntax"
-  readings:
-  - rtitle: "PLC Ch. 2"
-    rlink: false   
+  date: "2"  
+  title: "Scripting Languages" 
   deliverables:
   - dtitle: "Programming Assignment: Functional Programming Due"
     dlink: "./Assignments/Functional"
@@ -291,13 +287,20 @@ schedule:
     rubricpath: "_pages/Assignments/asmt-scripting.md"    
 - week: "4"
   date: "0"
-  title: "Bindng and Scope" 
-  link: "./Activities/BindingScope" 
+  title: "Syntax and Semantics"
+  link: "./Activities/Syntax"
+  readings:
+  - rtitle: "PLC Ch. 2"
+    rlink: false   
 - week: "4"
   date: "1"
-  title: "Bindng and Scope"
+  title: "Syntax and Semantics"
 - week: "4"
   date: "2"
+  title: "Bindng and Scope"
+  link: "./Activities/BindingScope"   
+- week: "5"
+  date: "0"
   title: "Regular Expressions"
   link: "./Activities/Regex"
   readings:
@@ -305,9 +308,6 @@ schedule:
     rlink: false
   - rtitle: "Regular Expressions Video"
     rlink: "https://youtube.com/watch?v=528Jc3q86F8"    
-- week: "5"
-  date: "0"
-  title: "Regular Expressions"   
   deliverables:
   - dtitle: "Midterm Exam: Midterm Handed Out"
     dlink: false
@@ -315,13 +315,7 @@ schedule:
     submission_types: "written"        
 - week: "5"
   date: "1"
-  title: "Finite Automata"
-  link: "./Activities/Automata"
-  readings:
-  - rtitle: "Compilers Ch. 3.4-3.6"
-    rlink: false  
-  - rtitle: "Finite Automata Video"
-    rlink: "https://youtube.com/watch?v=vhiiia1_hC4"   
+  title: "Regular Expressions"
   deliverables:
   - dtitle: "Programming Assignment: Shell Scripting Due"
     dlink: "./Assignments/Scripting"
@@ -329,19 +323,21 @@ schedule:
     rubricpath: "_pages/Assignments/asmt-scripting.md"    
 - week: "5"
   date: "2"
-  title: "Finite Automata"   
-  deliverables:
-  - dtitle: "Participation: First Self-Assessment Handed Out"
-    dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10 
-    submission_types: "written"        
+  title: "Regular Expressions"
+  deliverables:       
   - dtitle: "Midterm Exam: Midterm Due"
     dlink: false
     points: 100   
     submission_types: "written"            
 - week: "6"
   date: "0"
-  title: "Finite Automata"  
+  title: "Finite Automata"
+  link: "./Activities/Automata"
+  readings:
+  - rtitle: "Compilers Ch. 3.4-3.6"
+    rlink: false  
+  - rtitle: "Finite Automata Video"
+    rlink: "https://youtube.com/watch?v=vhiiia1_hC4"  
   deliverables: 
   - dtitle: "Programming Assignment: Regular Expressions Handed Out"
     dlink: "./Assignments/Regex"
@@ -349,13 +345,12 @@ schedule:
     rubricpath: "_pages/Assignments/asmt-regex.md"        
 - week: "6"
   date: "1"
-  title: "Data Types"  
-  link: "./Activities/Types"
+  title: "Finite Automata"
   deliverables:
-  - dtitle: "Participation: First Self-Assessment Due"
+  - dtitle: "Participation: First Self-Assessment Handed Out"
     dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10  
-    submission_types: "written"            
+    points: 10 
+    submission_types: "written"   
   readings:
   - rtitle: "PLC Ch. 3"
     rlink: false      
@@ -363,24 +358,21 @@ schedule:
     rlink: false       
 - week: "7"
   date: "1"
+  title: "Data Types"  
+  link: "./Activities/Types"  
+- week: "7"
+  date: "2"
   title: "Code Structure: Expressions and Conditionals"
   link: "./Activities/CodeStructure"
   readings:
   - rtitle: "PLC Ch. 4"
-    rlink: false    
-- week: "7"
-  date: "2"
+    rlink: false      
+- week: "8"
+  date: "0"
   title: "Code Structure: Functions, Exceptions, and Memory Management"
   readings:
   - rtitle: "Compilers Ch. 9"
-    rlink: false   
-- week: "8"
-  date: "0"
-  title: "Data Structures and Generics"  
-  link: "./Activities/DataStructures"
-  readings:
-  - rtitle: "PLC Ch. 5"
-    rlink: false  
+    rlink: false     
   deliverables:
   - dtitle: "Programming Assignment: Regular Expressions Due"
     dlink: "./Assignments/Regex"
@@ -392,17 +384,25 @@ schedule:
     rubricpath: "_pages/Assignments/asmt-automata.md"    
 - week: "8"
   date: "1"
+  title: "Data Structures and Generics"  
+  link: "./Activities/DataStructures"
+  readings:
+  - rtitle: "PLC Ch. 5"
+    rlink: false  
+- week: "8"
+  date: "2"
   title: "The Lambda Calculus"
   link: "./Activities/LambdaCalculus"
   readings:
   - rtitle: "Introduction to the Lambda Calculus"
     rlink: "https://plato.stanford.edu/entries/lambda-calculus/" 
   - rtitle: "Lambda Calculus Video"
-    rlink: "https://youtube.com/watch?v=3VQ382QG-y4"    
-- week: "8"
-  date: "2"
-  title: "The Compilation / Linking Process and Bytecode"  
-  link: "./Activities/CompilerLinker"
+    rlink: "https://youtube.com/watch?v=3VQ382QG-y4"      
+  deliverables:
+  - dtitle: "Participation: First Self-Assessment Due"
+    dlink: "./Assignments/Participation/SelfAssessment"
+    points: 10  
+    submission_types: "written"              
   readings:
   - rtitle: "Compilers Ch. 2, 8"
     rlink: false 
@@ -412,37 +412,39 @@ schedule:
     rlink: "https://youtube.com/watch?v=UdMRcJwvWIY"   
 - week: "9"
   date: "0"
-  title: "Libraries"
-  link: "./Activities/Libraries"
+  title: "The Lambda Calculus"
 - week: "9"
   date: "1"
-  title: "Grammars"   
-  link: "./Activities/Grammars"
-  readings:
-  - rtitle: "Compilers Ch. 3"
-    rlink: false   
+  title: "The Compilation / Linking Process and Bytecode"  
+  link: "./Activities/CompilerLinker"    
   deliverables:
   - dtitle: "Programming Assignment: Automata Due"
     dlink: "./Assignments/Automata"
     points: 100  
     rubricpath: "_pages/Assignments/asmt-automata.md"    
+- week: "9"
+  date: "2"
+  title: "Libraries"
+  link: "./Activities/Libraries"      
+  deliverables:
   - dtitle: "Programming Assignment: Libraries Handed Out"
     dlink: "./Assignments/Libraries"
     points: 100     
-    rubricpath: "_pages/Assignments/asmt-libraries.md"    
-- week: "9"
-  date: "2"
-  title: "Grammars"        
+    rubricpath: "_pages/Assignments/asmt-libraries.md"      
 - week: "10"
   date: "0"
-  title: "Ambiguity in Grammars"    
+  title: "Grammars"   
+  link: "./Activities/Grammars"
+  readings:
+  - rtitle: "Compilers Ch. 3"
+    rlink: false    
 - week: "10"
   date: "1"
-  title: "Tokens and Scanning"
-  link: "./Activities/TokensScanning"  
+  title: "Grammars"  
 - week: "10"
   date: "2"
   title: "Tokens and Scanning"
+  link: "./Activities/TokensScanning"  
   deliverables:
   - dtitle: "Programming Assignment: Libraries Due"
     dlink: "./Assignments/Libraries"
