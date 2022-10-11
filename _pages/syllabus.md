@@ -95,7 +95,7 @@ instructors:
     location: "Pfahler 101L"         
   - day: "F"
     starttime: "12:00 PM"
-    endtime: "11:00 PM"
+    endtime: "01:30 PM"
     location: "Pfahler 101L or IDC Lobby for Tea Time"
     
 textbooks:
