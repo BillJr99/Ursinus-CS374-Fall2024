@@ -106,6 +106,6 @@ Write a new program based on your warmup that computes the following regular exp
 
 In your README, discuss why it would be impossible to write a single regular expression to ensure that all opening parentheses are properly nested inside other parentheses, and balanced.  In other words, why is it difficult to write a regular expression that matches these `String`s: `(())`, `(()()(()))`, but not these: `((()()`, `())`?  Note: do not attempt to write this regular expression, beyond identifying that it cannot be done!
 
-## Part 3: Replacements
+## Part 4: Replacements
 
 The `re.sub(pattern, replacement, data)` will look for the regular expression defined by `pattern` in the text specified by `data`, and replace each instance with the string `replacement`.  Write a program or function to replace all instances of `CS374` or `CS 374` with `Principles of Programming Languages`.
