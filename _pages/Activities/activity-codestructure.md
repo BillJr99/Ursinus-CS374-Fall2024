@@ -90,7 +90,7 @@ info:
             
             // Suppose getNext(ListNode* x) returns x->next
             if(ptr != NULL && getNext(ptr) == NULL) {
-                printf("I am the only elment in this list!\n");
+                printf("I am the only element in this list!\n");
             }
         }
         ]]></script> 
