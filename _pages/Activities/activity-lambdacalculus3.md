@@ -8,7 +8,7 @@ info:
   prev: ./LambdaCalculus2
   next: ./LambdaCalculus4
   goals: 
-    - To derive numeric and recursive structures using the Lambda Calculus, beta-reductions, and the Y Combinator        
+    - To explore examples of combinators in the Lambda Calculus using the Scheme and node.js languages
         
 tags:
   - lambdacalculus

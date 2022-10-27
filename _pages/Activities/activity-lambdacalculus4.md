@@ -7,7 +7,7 @@ excerpt: "CS374: Programming Language Principles - The Lambda Calculus"
 info: 
   prev: ./LambdaCalculus2
   goals: 
-    - To derive numeric and recursive structures using the Lambda Calculus, beta-reductions, and the Y Combinator         
+    - To explore examples of Church Encodings and mathematics in the Lambda Calculus using the Scheme and node.js languages
         
 tags:
   - lambdacalculus
