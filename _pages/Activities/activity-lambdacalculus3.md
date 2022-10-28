@@ -33,7 +33,7 @@ tags:
 
 **"Bird" Combinators**:
 
-(λx.x) - Identify (I)
+(λx.x) - Identity (I)
 
 > In node.js:  
 > I = a =&gt; a
@@ -61,7 +61,7 @@ tags:
 >
 >  
 
-(λa λb.a) also written via **Beta Reduction** as (λab.a) - Krestel (K) == True
+(λa λb.a) also written via **Currying** as (λab.a) - Krestel (K) == True
 
  
 
@@ -202,7 +202,7 @@ In Scheme:
 <tr class="header">
 <th><strong>P</strong></th>
 <th><strong>Q</strong></th>
-<th><strong>P or Q</strong></th>
+<th><strong>P and Q</strong></th>
 </tr>
 </thead>
 <tbody>
@@ -214,12 +214,12 @@ In Scheme:
 <tr class="even">
 <td>F</td>
 <td>T</td>
-<td>T</td>
+<td>F</td>
 </tr>
 <tr class="odd">
 <td>T</td>
 <td>F</td>
-<td>T</td>
+<td>F</td>
 </tr>
 <tr class="even">
 <td>T</td>
@@ -260,6 +260,42 @@ In Scheme:
 Alternative: or3 = p =&gt; q =&gt; M(p)(q) // ppq, because M(p) = pp
 
  
+<table>
+<colgroup>
+<col style="width: 35%" />
+<col style="width: 35%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>P</strong></th>
+<th><strong>Q</strong></th>
+<th><strong>P or Q</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>F</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>F</td>
+<td>T</td>
+<td>T</td>
+</tr>
+<tr class="odd">
+<td>T</td>
+<td>F</td>
+<td>T</td>
+</tr>
+<tr class="even">
+<td>T</td>
+<td>T</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
 
 XOR Operator:
 
