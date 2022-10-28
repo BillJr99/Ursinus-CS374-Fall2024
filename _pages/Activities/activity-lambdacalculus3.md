@@ -281,6 +281,10 @@ not (x xor y)
 
 (λxy.(x (y false true) y) false true)
 
+Alternatively, the opposite of xor:
+(λxy.(x y (not y)))
+
+
 
 <table>
 <colgroup>
