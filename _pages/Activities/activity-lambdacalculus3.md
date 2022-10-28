@@ -277,9 +277,9 @@ not (x xor y)
 
 (λxy.\_\_\_\_\_\_\_\_\_\_\_\_)
 
-(λxy.(x (not y) y) (false true))
+(λxy.(x (not y) y) false true)
 
-(λxy.(x (y false true) y) (false true))
+(λxy.(x (y false true) y) false true)
 
 
 <table>
