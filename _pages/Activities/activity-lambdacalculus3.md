@@ -277,9 +277,10 @@ not (x xor y)
 
 (λxy.\_\_\_\_\_\_\_\_\_\_\_\_)
 
-(λxy.(x false true) (x (not y) y)
+(λxy.(x (not y) y) (false true))
 
-(λxy.(x false true) (x (y false true) y)
+(λxy.(x (y false true) y) (false true))
+
 
 <table>
 <colgroup>
