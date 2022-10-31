@@ -14,6 +14,41 @@ tags:
   
 ---
 
+Recursion with the Y-Combinator
+
+Y = λf.(λx.fr(x x))(λx.f(x x))      <--- what combinator(s) do you see here?  Why might this be problematic?
+
+Y g = (λf.(λx.f(x x))(λx.f(x x))) g
+
+Y g = (λx.g (x x)) (λx.g (x x)) : after b-reduction of g for f
+
+Y g = g ((λx.g (x x)) (λx.g (x x))) : after b-reduction of right parameter into left function for x
+
+Y g = g (Y g) : substitution of Y = lambda f.(lambda x.f(x x))(λx.f(x x)) in inner parameter
+
+ 
+
+*From <https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed-point_combinators_in_lambda_calculus>*
+
+ 
+
+(define ycombinator ((lambda (f) (lambda (x) (f (x x)))) (lambda (x) (f (x x)))))
+
+ 
+
+Y = f =&gt; x =&gt; f(f(x)(x))(f(x)(x))
+
+console.log(Y('g'))
+
+Z = λg.(λx.g(λv.xxv))(λx.g(λv.xxv))            <--- how might this help solve the issue above?
+
+const Z = g => (x => g(v => x(x)(v)))(x => g(v => x(x)(v)))
+
+From https://medium.com/swlh/y-and-z-combinators-in-javascript-lambda-calculus-with-real-code-31f25be934ec
+
+
+Church Numerals:
+
 (define n0 (lambda (f a) a))
 
 (define n1 (lambda (f a) (f a)))
@@ -179,34 +214,6 @@ mult(3, 2) = λxyz.x(yz) 3 2 ; 3 f's and 2 f's
 
  
 
-Recursion with the Y-Combinator
-
-Y = λf.(λx.fr(x x))(λx.f(x x))
-
-Y g = (λf.(λx.f(x x))(λx.f(x x))) g
-
-Y g = (λx.g (x x)) (λx.g (x x)) : after b-reduction of g for f
-
-Y g = g ((λx.g (x x)) (λx.g (x x))) : after b-reduction of right parameter into left function for x
-
-Y g = g (Y g) : substitution of Y = lambda f.(lambda x.f(x x))(λx.f(x x)) in inner parameter
-
- 
-
-*From <https://en.wikipedia.org/wiki/Fixed-point_combinator#Fixed-point_combinators_in_lambda_calculus>*
-
- 
-
-(define ycombinator ((lambda (f) (lambda (x) (f (x x)))) (lambda (x) (f (x x)))))
-
- 
-
-Y = f =&gt; x =&gt; f(f(x)(x))(f(x)(x))
-
-console.log(Y('g'))
-
- 
-
 A Lambda Calculus Program:
 
  
@@ -262,3 +269,4 @@ Can you reduce all the function calls to their lambda states for substitution?
 
 // Y Not- Adventures in Functional Programming by Jim Weirich: <https://youtu.be/FITJMJjASUs>
 
+// https://medium.com/swlh/y-and-z-combinators-in-javascript-lambda-calculus-with-real-code-31f25be934ec
