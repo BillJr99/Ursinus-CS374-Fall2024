@@ -246,14 +246,8 @@ Factorial?
 
 ; <https://courses.cs.washington.edu/courses/cse341/03au/slides/Lambda/tsld015.htm>
 
-(define factorial ((lambda (x) (lambda (y) x (y y)) (lambda (y) x (y y)))  
+(define factorial ((lambda (x) (lambda (y) x (y y)) (lambda (y) x (y y)))     &lt;--- y combinator!
 (lambda (f) (lambda (n) (is0 n) 1 (mult n (f (pred n)))))))
-
- 
-
- 
-
-&lt;--- y combinator!
 
  
 
