@@ -16,7 +16,7 @@ tags:
 
 Recursion with the Y-Combinator
 
-Y = λf.(λx.fr(x x))(λx.f(x x))      <--- what combinator(s) do you see here?  Why might this be problematic?
+Y = λf.(λx.f(x x))(λx.f(x x))      <--- what combinator(s) do you see here?  Why might this be problematic?
 
 Y g = (λf.(λx.f(x x))(λx.f(x x))) g
 
