@@ -72,6 +72,13 @@ int main(void) {
 }
 ```
 
+### Extra Credit (10%): Tracking the Number of Bytes Allocated and Freed
+Tracking the number of bytes allocated is relatively easy, since the size of the malloc is provided to the `malloc` function as a parameter.  You could simply add that value to your running total!
+
+The `free` function presents a challenge in that only the address of the free is known to the function, rather than the size of the originally allocated memory at that address.  You could add a linked list or hash table that maps the memory address to the size during `malloc`, and look up that value during `free`.  You could then subtract that amount, and track the actual amount of bytes leaked in your program by failing to free memory.
+
+Add this linked list or hash table and track the number of bytes for extra credit!
+
 ## References:
 
 [^1]: https://ncona.com/2019/03/building-and-using-a-library-in-cpp/
