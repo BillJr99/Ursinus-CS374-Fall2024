@@ -30,7 +30,7 @@ info:
       title: "Ambiguous Grammars"
       questions:
         - "How might <code>selection-statement</code> lead to a dangling else block ambiguity in a nested if statement?"
-        - "When your parser reaches en <code>ELSE</code> token, should it resolve the prior <code>IF</code> statement or continue parsing as part of this inner nested <code>IF</code> clause?  This is known as a <strong>shift-reduce</code> conflict."
+        - "When your parser reaches en <code>ELSE</code> token, should it resolve the prior <code>IF</code> statement or continue parsing as part of this inner nested <code>IF</code> clause?  This is known as a <strong>shift-reduce</strong> conflict."
         - "How is the ambiguity resolved using the <code>open_statement</code> instead?"
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
