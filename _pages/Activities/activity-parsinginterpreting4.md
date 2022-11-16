@@ -362,3 +362,99 @@ tags:
   
 ---
 
+## Parsing Example
+
+Consider a valid string `xyyx` for the above grammar:
+
+```
+S -> Xyx
+X -> xX | y
+```
+
+For intuition, we construct the string `xyyx` with this grammar as follows:
+
+```
+S -> Xyx == Xyx
+X -> xX  == xXyx
+X -> y   == xyyx
+```
+
+To parse with the LR(0) parse table:
+
+Construct a stack.  Initially, we're pointing at the first `x`, and we push 0 to the stack
+
+```
+[0] (top of the stack is to the right)
+```
+
+See the state at the top of the stack (0), with x, we see s3 (shift 3) in the parse table above.
+To shift, we push the token and the state:
+
+```
+[0 x 3]
+```
+
+We move to the second character `y` in the string.  
+We are at state 3 at the top of the stack, and state 3 on character y is s4.  Push the character and state 4:
+
+```
+[0 x 3 y 4]
+```
+
+The third character is `y` and we are at state 4.  This is r3 (reduce 3).  To reduce,
+we pop off the top 2*n symbols, where n is the length of the production.  Production 3 is `X -> y`.
+This is length 1, so we pop 2 symbols (4 and y) and replace them with X.
+
+```
+[0 x 3 X]
+```
+
+Next, we push a state number.  The prior topmost state is 3 on the stack, and for state 3 and X we goto 6.  So we push 6.
+
+```
+[0 x 3 X 6]
+```
+
+We are still pointing to the third character `y` - we haven't pushed it yet, only reduced the prior symbol(s).
+The topmost state is 6 in the stack, and state 6 on y is r2, so we reduce again with production 2 (`X -> xX`).
+Notice we're reducing in reverse order from the intuitive expansion we did before we used the table!
+
+`X -> xX` has length 2, so we pop 4 symbols from the stack and replace them with X
+
+```
+[0 X]
+```
+
+X on state 0 is goto 2, so we push 2 to the stack:
+
+```
+[0 X 2]
+```
+
+We still haven't processed y with a shift!  So, we're still pointing to the third character `y`.  
+y on state 2 (the topmost state on the stack) is shift 5.  So we push y and 5:
+
+```
+[0 X 2 y 5]
+```
+
+The final character is an `x`.  An x on state 5 is s7, so we shift x and state 7:
+
+```
+[0 X 2 y 5 x 7]
+```
+
+Finally, we are at the end of the string (`$`).  $ on state 7 is r1, so this is production `S -> Xyx`.
+This has length 3, so we pop 6 tokens and replace it with S.
+
+```
+[0 S]
+```
+
+For the state number, we use the topmost state (0) on the stack and S, which is goto 1.
+
+```
+[0 S 1]
+```
+
+We have only reduced, so we're still processing the $ character.  $ on state 1 is accept in the table above, and so we accept.
