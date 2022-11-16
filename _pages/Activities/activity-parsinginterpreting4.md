@@ -351,6 +351,7 @@ info:
         </tbody>
         </table>
         <br>
+        <div align="left">
         <a href="https://en.wikipedia.org/wiki/LR_parser#Bottom-up_parse_steps_for_example_A*2_+_1">Grammar Productions for this grammar</a>:
         <ol>
         <li>r0: Goal → Sums eof</li>
@@ -361,6 +362,7 @@ info:
         <li>r5: Value → int</li>
         <li>r6: Value → id</li>
         </ol>
+        </div>
       title: "LR(0) Parse Tables"
       questions:
         - "Click on the image to see the steps involved with parsing <code>A*2 + 1</code>."
