@@ -71,7 +71,7 @@ info:
         // the token types are as defined in the %union above
         ]]></script> 
         <br>
-        <h2>calc.h</h2>
+        <h2>calc.l</h2>
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         %option noyywrap       
 
