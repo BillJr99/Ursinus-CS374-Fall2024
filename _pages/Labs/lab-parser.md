@@ -212,13 +212,13 @@ Consider our `flex` and `bison` scanner and parser definitions for a calculator 
 %%
 
 [ \t]	                ; // ignore all whitespace
-[0-9]+		            {yylval.ival = atoi(yytext); return T_INT;}
-"+"		                {return T_PLUS;}
-"-"		                {return T_MINUS;}
-"*"		                {return T_MULTIPLY;}
-"/"		                {return T_DIVIDE;}
-"("		                {return T_LEFT;}
-")"		                {return T_RIGHT;}
+[0-9]+		        {yylval.ival = atoi(yytext); return T_INT;}
+"+"		        {return T_PLUS;}
+"-"		        {return T_MINUS;}
+"*"		        {return T_MULTIPLY;}
+"/"		        {return T_DIVIDE;}
+"("		        {return T_LEFT;}
+")"		        {return T_RIGHT;}
 \n                      {return T_NEWLINE;}
 
 %%
