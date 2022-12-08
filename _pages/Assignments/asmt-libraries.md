@@ -45,7 +45,7 @@ You may choose any library functionality you would like, and references are OK a
 ## Part 2: Dynamic Library Loading \[[^2]\]
 Create a function called `malloc` that accepts an `int size` and returns a `void *`, just like `malloc` does.  In that function, create a pointer `static void*(*mymalloc)(int n)` that you will assign to a call to `dlsym(RTLD_NEXT, "malloc")`.  Call `mymalloc(size)` within this function, and store the result in a `void *` variable that your function will return.  Also increment a global variable that you'll store statically within your module.  This call will look like this:
 
-```java
+```c
 #include <dlfcn.h>
 #include <stddef.h>
 
@@ -56,13 +56,9 @@ void* malloc(size_t size) {
 
 Next, do the same for `free`, which is a `void` function that accepts a `void *` parameter, as opposed to a function that accepts a `size_t` parameter and returns a `void *` like `malloc` did.  This time, decrement your counter, and print out that variable on each call to your custom `malloc` and `free`.  Test it out with a main() function that calls `malloc` and `free` a few times so you can verify the result.  You should have a count of 0 if you call `free` the same number of times as you call `malloc`!
 
-To compile your library, you can save your file as `mallocfree.c` and run:
-
-`gcc mallocfree.c -ldl`
-
 And, to test, you can write a `main()` function that calls `malloc` and `free`, and compile and run it as usual.  Here is an example:
 
-```java
+```c
 int main(void) {
     int* x = (int*) malloc(sizeof(int)); 
     *x = 5;
@@ -70,6 +66,36 @@ int main(void) {
     free(x);
     // print your counter value, which you can declare as a static int in this module, and increment/decrement in malloc/free
 }
+```
+
+### Building
+
+If you are using replit, you can click the three dots next to the `Files` list, and choose `Show Hidden Files`.  This will allow you to edit the makefile and enter the compile flags to build these files automatically.  Here is that makefile:
+
+```
+all: libs.so main
+
+CC = gcc
+override CFLAGS += -ldl
+
+SRCS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.c' -print)
+HEADERS = $(shell find . -name '.ccls-cache' -type d -prune -o -type f -name '*.h' -print)
+
+main: $(SRCS) $(HEADERS)
+	$(CC) $(CFLAGS) "$@.c" -o "$@"
+
+libs.so: $(SRCS) $(HEADERS)
+	$(CC) $(CFLAGS) $(basename $@).c -shared -fpic -o "$@"
+
+clean:
+	rm -f main libs.so
+```
+
+Otherwise, you can compile the dynamic library and user client program with the following commands, assuming your dynamic library functions are saved in a file called `libs.c` and your main function to test is in a file called `main.c`:
+
+```
+gcc -Wall -DRUNTIME -shared -fpic -o libs.so libs.c -ldl
+gcc main.c -ldl
 ```
 
 ### Extra Credit (10%): Tracking the Number of Bytes Allocated and Freed
