@@ -49,6 +49,9 @@ info:
       title: "An Alternative Grammar"
       questions:
         - "What is different about this grammar from the original one?"
+  additional_reading:
+    - link: https://tldp.org/HOWTO/Lex-YACC-HOWTO.html
+      title: Lex and YACC primer
       
 tags:
   - parser
