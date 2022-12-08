@@ -120,7 +120,7 @@ tags:
 ## Makefile for Lex and Yacc files
 
 ```
-all: calc
+all: main
 
 calc.tab.c calc.tab.h:	calc.y
 	bison -t -v -d calc.y
@@ -128,9 +128,9 @@ calc.tab.c calc.tab.h:	calc.y
 lex.yy.c: calc.l 
 	flex calc.l
 
-calc: lex.yy.c calc.tab.c calc.tab.h
-	gcc -g -o calc calc.tab.c lex.yy.c
+main: lex.yy.c calc.tab.c calc.tab.h
+	gcc -g -o main calc.tab.c lex.yy.c
 
 clean:
-	rm calc calc.exe calc.exe.stackdump calc.tab.c lex.yy.c calc.tab.h calc.output
+	rm main calc calc.exe calc.exe.stackdump calc.tab.c lex.yy.c calc.tab.h calc.output
 ```
