@@ -319,7 +319,7 @@ struct symbol {
 If you encounter the assignment production, print the expression result like before, but now, also assign the value to the symbol table:
 
 ```c
-struct symbol* sym = putsymbol($1, TYPE_IVAL); 
+struct symbol* sym = putsymbol($1, TYPE_IVAL); // use TYPE_FVAL if you are using float!
 sym->value.ival = $3; // use fval if you are using float!
 ```
 
@@ -346,7 +346,7 @@ line: T_NEWLINE
 The code to manipulate the linked list (insert and search) is provided for you, and can also be included in the header definitions of your parser file.
 
 ```c
-const int TYPE_IVAL = 0;
+const int TYPE_IVAL = 0; // make a TYPE_FVAL for float!
 struct symbol* symboltable = NULL;
 
 struct symbol* putsymbol(char* name, int type) {
