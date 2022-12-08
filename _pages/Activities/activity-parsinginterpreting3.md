@@ -125,12 +125,12 @@ all: calc
 calc.tab.c calc.tab.h:	calc.y
 	bison -t -v -d calc.y
 
-lex.yy.c: calc.l calc.tab.h
+lex.yy.c: calc.l 
 	flex calc.l
 
 calc: lex.yy.c calc.tab.c calc.tab.h
-	gcc -o calc calc.tab.c lex.yy.c
+	gcc -g -o calc calc.tab.c lex.yy.c
 
 clean:
-	rm calc calc.exe calc.tab.c lex.yy.c calc.tab.h calc.output
+	rm calc calc.exe calc.exe.stackdump calc.tab.c lex.yy.c calc.tab.h calc.output
 ```
