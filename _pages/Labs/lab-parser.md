@@ -192,6 +192,23 @@ int main(void) {
 
 Notice the `term` and `expression` nonterminals require left factoring in order to properly implement repeating expressions.  Revise the grammar to factor these common productions, and include your revised grammar with your submission.  Then, modify the example recursive descent parser to call your new nonterminals.
 
+Your new grammar will look like this:
+
+```
+ expr: term expr2
+ expr2: addsub expr | null
+ term: factor term2
+ term2: muldiv term | null
+ factor: num
+       | "(" expr ")"
+ addsub: "+" | "-"
+ muldiv: "*" | "/"
+ num: [0-9]+
+
+```
+
+To do this, your `expr()` function will call `term` and then immediately call `expr2`.  Add these return values together and return that from `expr`!  If your `addsub` is a minus sign in `expr2`, you can return the negative of the value.  **What should you return if you get null, or in other words, neither a plus nor a minus?**  Repeat this process for `term`, being sure to return the correct values for multiply, divide, and neither (the identity).
+
 ## Part 2: A Calculator Parser with Variable Assignments
 
 Consider our `flex` and `bison` scanner and parser definitions for a calculator grammar:
