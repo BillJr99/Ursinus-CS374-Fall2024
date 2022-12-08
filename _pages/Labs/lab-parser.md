@@ -289,6 +289,18 @@ First, modify this scanner and parser to support floating point values instead o
 
 Now, we will modify the grammar to support variable assignments.  To do this, we will support new grammar productions that allow storing an expression into a variable defined by an identifier that you can retrieve like a numeric value.  We will also add a type to our types `union` whose type is a `char*` (the name of the identifier variable).  Create a new token called `T_ID` (the name is arbitrary!) whose lexeme is one or more alphabetical characters, and a new token called `T_ASSIGN` that is the lexeme `:=`.  You'll have two new productions: a new `line` of the form `T_ID T_ASSIGN expr line`, and a new `factor` production that resolves to `T_ID`.  The type of the `T_ID` token will be text, so you can set the token type of whichever `union` element you associated with the `char*`.  
 
+In your scanner, you will add a new regular expression for an ID as follows, which returns the `T_ID` type, and copies the name of the variable into yylval.
+
+```c
+[a-zA-Z]+               {yylval.text = malloc(strlen(yytext)+1); strncpy(yylval.text, yytext, strlen(yytext)+1); return T_ID;}
+```
+
+Correspondingly, add a token into your parser as follows, right where you first defiend the T_INT token.  We'll define this one as text, assuming your union contains a `char* text` in addition to your numeric value.
+
+```c
+%token<text> T_ID
+```
+
 ### Symbol Table
 
 Let's add a symbol table linked list to the header definitions section of your parser file.  This will be a linked list of structures that contain a name, a type, and a value:
@@ -298,7 +310,7 @@ struct symbol {
     char* name;
     int type;
     union {
-        int ival;
+        int ival; // change this to a float to support floats!
     } value;
     struct symbol* next;
 };
@@ -308,10 +320,28 @@ If you encounter the assignment production, print the expression result like bef
 
 ```c
 struct symbol* sym = putsymbol($1, TYPE_IVAL); 
-sym->value.ival = $3;
+sym->value.ival = $3; // use fval if you are using float!
 ```
 
-Your `T_ID` `factor` production can retrieve this value from the linked list, and resolve to the value that it finds.  Since our example adds items to the list from the front, the most recent value is always bound to the symbol name.  So, you can return the first instance of the symbol.
+Your `factor: T_ID` production can retrieve this value from the linked list, and resolve to the value that it finds.  Since our example adds items to the list from the front, the most recent value is always bound to the symbol name.  So, you can return the first instance of the symbol.
+
+This will enable you to execute expressions such as:
+
+```
+X := 5
+X * 2
+```
+
+However, you'll need to support multiple expressions.  You can do this by creating a recursive calculator parser, in which `calc` resolves to `calc` followed by an additional line.  This allows the calculator to parse any number of lines:
+
+```c
+calc:                               
+    | calc line                     
+
+line: T_NEWLINE  
+    | expr T_NEWLINE                { printf("%d\n", $1); } // no return value needed, no type
+    | T_ID T_ASSIGN expr line       { }  // your code here to create a symbol whose name is T_ID, and whose value is whatever expr resolves to!
+```    
 
 The code to manipulate the linked list (insert and search) is provided for you, and can also be included in the header definitions of your parser file.
 
