@@ -403,6 +403,8 @@ struct symbol* getsymbol(char* name) {
 }
 ```
 
+To build this project, modify and use the makefile in our notes (the link to the activity containing the example makefile is listed on this page!).
+
 ## References:
 
 [^1]: https://gist.github.com/mlabbe/81d667bac36aa60787fee60e3647a0a8
