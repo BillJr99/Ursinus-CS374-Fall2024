@@ -123,7 +123,7 @@ tags:
 all: main
 
 calc.tab.c calc.tab.h:	calc.y
-	bison -t -v -d calc.y
+	bison --report=all --report-file=report -t -v -d calc.y
 
 lex.yy.c: calc.l 
 	flex calc.l
