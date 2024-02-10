@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/BindingScope
 title: "CS374: Programming Language Principles - Binding and Scope"
-excerpt: "CS374: Programming Language Principles - Binding and Scope"
+
 
 info: 
   goals: 

@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/DataStructures
 title: "CS374: Programming Language Principles - Data Structures"
-excerpt: "CS374: Programming Language Principles - Data Structures"
+
 
 info: 
   goals: 

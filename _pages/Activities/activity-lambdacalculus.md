@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/LambdaCalculus
 title: "CS374: Programming Language Principles - The Lambda Calculus"
-excerpt: "CS374: Programming Language Principles - The Lambda Calculus"
+
 
 info: 
   next: ./LambdaCalculus2

@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Libraries
 title: "CS374: Programming Language Principles - Static and Dynamic Linked Libraries"
-excerpt: "CS374: Programming Language Principles - Static and Dynamic Linked Libraries"
+
 
 info: 
   goals: 

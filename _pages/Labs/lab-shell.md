@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Labs/Shell
 title: "CS374: Principles of Programming Languages - The Shell Terminal"
-excerpt: "CS374: Principles of Programming Languages - The Shell Terminal"
+
 
 info:
   coursenum: CS374

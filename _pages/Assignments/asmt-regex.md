@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Regex
 title: "CS374: Principles of Programming Languages - Regular Expressions"
-excerpt: "CS374: Principles of Programming Languages - Regular Expressions"
+
 
 info:
   coursenum: CS374

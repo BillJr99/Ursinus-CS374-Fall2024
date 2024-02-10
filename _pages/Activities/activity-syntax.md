@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Syntax
 title: "CS374: Programming Language Principles - Syntax and Semantics"
-excerpt: "CS374: Programming Language Principles - Syntax and Semantics"
+
 
 info: 
   goals: 

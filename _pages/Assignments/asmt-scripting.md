@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Scripting
 title: "CS374: Principles of Programming Languages - Scripting Languages"
-excerpt: "CS374: Principles of Programming Languages - Scripting Languages"
+
 
 info:
   coursenum: CS374

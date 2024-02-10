@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Types
 title: "CS374: Programming Language Principles - Data Types"
-excerpt: "CS374: Programming Language Principles - Data Types"
+
 
 info: 
   goals: 

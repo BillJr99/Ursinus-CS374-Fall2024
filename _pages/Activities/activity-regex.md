@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Regex
 title: "CS374: Programming Language Principles - Regular Expressions"
-excerpt: "CS374: Programming Language Principles - Regular Expressions"
+
 
 info: 
   goals: 

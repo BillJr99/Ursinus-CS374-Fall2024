@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/TokensScanning
 title: "CS374: Programming Language Principles - Tokens and Scanning Lexemes"
-excerpt: "CS374: Programming Language Principles - Tokens and Scanning Lexemes"
+
 
 info: 
   goals: 

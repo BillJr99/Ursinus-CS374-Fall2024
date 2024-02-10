@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Automata
 title: "CS374: Programming Language Principles - Finite Automata"
-excerpt: "CS374: Programming Language Principles - Finite Automata"
+
 
 info: 
   goals: 

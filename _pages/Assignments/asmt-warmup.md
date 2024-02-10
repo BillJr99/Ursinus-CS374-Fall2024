@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Warmup
 title: "CS374: Principles of Programming Languages - Warmup"
-excerpt: "CS374: Principles of Programming Languages - Warmup"
+
 
 info:
   coursenum: CS374

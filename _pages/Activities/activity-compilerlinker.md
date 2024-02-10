@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/CompilerLinker
 title: "CS374: Programming Language Principles - The Compilation and Linking Processes"
-excerpt: "CS374: Programming Language Principles - The Compilation and Linking Processes"
+
 
 info: 
   goals: 

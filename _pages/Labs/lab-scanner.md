@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Labs/Scanner
 title: "CS374: Principles of Programming Languages - Scanners"
-excerpt: "CS374: Principles of Programming Languages - Scanners"
+
 
 info:
   coursenum: CS374

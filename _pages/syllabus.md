@@ -2,7 +2,7 @@
 layout: syllabus
 permalink: /
 title: "CS374: Principles of Programming Languages"
-excerpt: "CS374: Principles of Programming Languages"
+
     
 info:
   course_number: CS374

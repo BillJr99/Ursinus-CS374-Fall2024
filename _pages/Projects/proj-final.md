@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Projects/Final
 title: "CS374: Principles of Programming Languages - Final Project"
-excerpt: "CS374: Principles of Programming Languages - Final Project"
+
 
 info:
   coursenum: CS374

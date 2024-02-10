@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Functional
 title: "CS374: Programming Language Principles - Functional Programming with Scheme"
-excerpt: "CS374: Programming Language Principles - Functional Programming with Scheme"
+
 
 info:  
   goals: 

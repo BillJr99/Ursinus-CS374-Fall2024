@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Participation/PreAssessment
 title: "CS374: Principles of Programming Languages - Participation Pre Assessment"
-excerpt: "CS374: Principles of Programming Languages - Participation Pre Assessment"
+
 
 info:
   coursenum: CS374

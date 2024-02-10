@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/AST
 title: "CS374: Programming Language Principles - Abstract Syntax Trees"
-excerpt: "CS374: Programming Language Principles - Abstract Syntax Trees"
+
 
 info: 
   goals: 

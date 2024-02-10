@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Automata
 title: "CS374: Principles of Programming Languages - Finite Automata"
-excerpt: "CS374: Principles of Programming Languages - Finite Automata"
+
 
 info:
   coursenum: CS374

@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/Grammars
 title: "CS374: Programming Language Principles - Grammars"
-excerpt: "CS374: Programming Language Principles - Grammars"
+
 
 info: 
   next: ./Grammars2

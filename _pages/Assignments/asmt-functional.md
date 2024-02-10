@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Functional
 title: "CS374: Principles of Programming Languages - Functional Programming"
-excerpt: "CS374: Principles of Programming Languages - Functional Programming"
+
 
 info:
   coursenum: CS374

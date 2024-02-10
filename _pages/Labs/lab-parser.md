@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Labs/Parser
 title: "CS374: Principles of Programming Languages - Parsing"
-excerpt: "CS374: Principles of Programming Languages - Parsing"
+
 
 info:
   coursenum: CS374

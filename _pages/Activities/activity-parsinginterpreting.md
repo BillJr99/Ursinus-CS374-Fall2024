@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/ParserInterpreter
 title: "CS374: Programming Language Principles - Parsers and Interpreters"
-excerpt: "CS374: Programming Language Principles - Parsers and Interpreters"
+
 
 info: 
   next: ./ParserInterpreter2

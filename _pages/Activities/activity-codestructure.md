@@ -2,7 +2,7 @@
 layout: activity
 permalink: /Activities/CodeStructure
 title: "CS374: Programming Language Principles - Code Structure"
-excerpt: "CS374: Programming Language Principles - Code Structure"
+
 
 info: 
   goals: 

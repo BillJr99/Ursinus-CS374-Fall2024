@@ -2,7 +2,7 @@
 layout: assignment
 permalink: /Assignments/Libraries
 title: "CS374: Principles of Programming Languages - Libraries"
-excerpt: "CS374: Principles of Programming Languages - Libraries"
+
 
 info:
   coursenum: CS374
