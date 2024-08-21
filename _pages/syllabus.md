@@ -107,6 +107,14 @@ textbooks:
   image: https://www3.nd.edu/~dthain/compilerbook/frontcover-2e.jpg
   isrequired: true
   freelyavailable: https://www3.nd.edu/~dthain/compilerbook/compilerbook.pdf
+- title: "Programming Languages: Application and Interpretation"
+  authors: "Shiram Krishnamurthi"
+  edition: "2nd Edition"
+  isbn: "N/A"
+  link: https://cs.brown.edu/~sk/Publications/Books/ProgLangs/2007-04-26/
+  image: https://cs.brown.edu/~sk/Publications/Books/ProgLangs/2007-04-26/cover-small.jpg
+  isrequired: true
+  freelyavailable: http://www.cs.brown.edu/courses/cs173/2012/book/book.pdf  
 - title: "Structure and Interpretation of Computer Programs"
   authors: "Harold Abelson and Gerald Jay Sussman with Julie Sussman"
   edition: "2nd Edition"
@@ -167,331 +175,369 @@ letter_grades:
   range: "0-59.49"  
 
 schedule:
-- week: "0"
-  date: "0"
-  title: "Course Overview"
-  link: "../Ursinus-CS374-Overview"
-  deliverables:  
-  - dtitle: "Programming Assignment: Warmup Handed Out"
-    dlink: "./Assignments/Warmup"
-    points: 10   
-    submission_types: "noupload"            
-- week: "0"
-  date: "1"
-  title: "History of Programming Languages"
-  link: "../Ursinus-CS374-History"
-  deliverables:
-  - dtitle: "Participation: Pre-Assessment Handed Out"
-    dlink: "./Assignments/Participation/PreAssessment"
-    points: 10  
-    submission_types: "written"    
-- week: "0"
-  date: "2"
-  title: "History of Programming Languages"   
-- week: "1"
-  date: "0"
-  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"   
-  link: "./Activities/Paradigms"   
-  deliverables:
-  - dtitle: "Programming Assignment: Warmup Due"
-    dlink: "./Assignments/Warmup"
-    points: 10   
-    submission_types: "noupload"            
-- week: "1"
-  date: "1"
-  title: "Functional Programming"
-  link: "./Activities/Functional"
-  deliverables:
-  - dtitle: "Participation: Pre-Assessment Due"
-    dlink: "./Assignments/Participation/PreAssessment"
-    points: 10 
-    submission_types: "written"  
-  - dtitle: "Lab: Shell Handed Out"
-    dlink: "./Labs/Shell"
-    points: 100   
-    rubricpath: "_pages/Labs/lab-shell.md"    
-  readings: 
-  - rtitle: "The Scheme Programming Language"
-    rlink: "https://www.scheme.com/tspl3/"
-- week: "1"
-  date: "2"
-  title: "Functional Programming"    
-- week: "2"
-  date: "0"
-  title: "Functional Programming" 
-- week: "2"
-  date: "1"
-  title: "Functional Programming" 
-  readings:
-  - rtitle: "Lispy - How to Write a Lisp Interpreter by Peter Norvig"
-    rlink: "http://norvig.com/lispy.html" 
-  deliverables:
-  - dtitle: "Lab: Shell Due"
-    dlink: "./Labs/Shell"
-    points: 100  
-    rubricpath: "_pages/Labs/lab-shell.md"    
-  - dtitle: "Programming Assignment: Functional Programming Handed Out"
-    dlink: "./Assignments/Functional"
-    points: 100        
-    rubricpath: "_pages/Assignments/asmt-functional.md"    
-- week: "2"
-  date: "2"
-  title: "Logic Programming"  
-  link: "./Activities/Paradigms"
-  readings:
-    - rtitle: "Concise Introduction to Prolog"
-      rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"    
-- week: "3"
-  date: "0"
-  title: "Scripting Languages" 
-  link: "./Activities/Paradigms"
-  readings:
-  - rtitle: "Bash Syntax Reference"
-    rlink: "https://tiswww.case.edu/php/chet/bash/bashref.html"      
-  - rtitle: "Bash Scripting Tutorial"
-    rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"  
-  - rtitle: "Bash Scripting Video"
-    rlink: "https://youtube.com/watch?v=e7BufAVwDiM"  
-- week: "3"
-  date: "1"
-  title: "Scripting Languages"       
-- week: "3"
-  date: "2"  
-  title: "Scripting Languages" 
-  deliverables:
-  - dtitle: "Programming Assignment: Functional Programming Due"
-    dlink: "./Assignments/Functional"
-    points: 100 
-    rubricpath: "_pages/Assignments/asmt-functional.md"        
-  - dtitle: "Programming Assignment: Shell Scripting Handed Out"
-    dlink: "./Assignments/Scripting"
-    points: 100     
-    rubricpath: "_pages/Assignments/asmt-scripting.md"    
-- week: "4"
-  date: "0"
-  title: "Syntax and Semantics"
-  link: "./Activities/Syntax"  
-- week: "4"
-  date: "1"
-  title: "Syntax and Semantics"
-- week: "4"
-  date: "2"
-  title: "Bindng and Scope"
-  link: "./Activities/BindingScope"   
-- week: "5"
-  date: "0"
-  title: "Regular Expressions"
-  link: "./Activities/Regex"
-  readings:
-  - rtitle: "Compilers Ch. 3.3"
-    rlink: false
-  - rtitle: "Regular Expressions Video"
-    rlink: "https://youtube.com/watch?v=528Jc3q86F8"    
-  deliverables:
-  - dtitle: "Midterm Exam: Midterm Handed Out"
-    dlink: false
-    points: 100   
-    submission_types: "written"        
-- week: "5"
-  date: "1"
-  title: "Regular Expressions"
-  deliverables:
-  - dtitle: "Programming Assignment: Shell Scripting Due"
-    dlink: "./Assignments/Scripting"
-    points: 100  
-    rubricpath: "_pages/Assignments/asmt-scripting.md"    
-- week: "5"
-  date: "2"
-  title: "Regular Expressions"
-  deliverables:       
-  - dtitle: "Midterm Exam: Midterm Due"
-    dlink: false
-    points: 100   
-    submission_types: "written"            
-- week: "6"
-  date: "0"
-  title: "Finite Automata"
-  link: "./Activities/Automata"
-  readings:
-  - rtitle: "Compilers Ch. 3.4-3.6"
-    rlink: false  
-  - rtitle: "Finite Automata Video"
-    rlink: "https://youtube.com/watch?v=vhiiia1_hC4"  
-  deliverables: 
-  - dtitle: "Programming Assignment: Regular Expressions Handed Out"
-    dlink: "./Assignments/Regex"
-    points: 100  
-    rubricpath: "_pages/Assignments/asmt-regex.md"        
-- week: "6"
-  date: "1"
-  title: "Finite Automata"
-  deliverables:
-  - dtitle: "Participation: First Self-Assessment Handed Out"
-    dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10 
-    submission_types: "written"   
-  readings:     
-  - rtitle: "Compilers Ch. 7"
-    rlink: false       
-- week: "7"
-  date: "1"
-  title: "Data Types"  
-  link: "./Activities/Types"  
-- week: "7"
-  date: "2"
-  title: "Code Structure: Expressions and Conditionals"
-  link: "./Activities/CodeStructure"      
-- week: "8"
-  date: "0"
-  title: "Code Structure: Functions, Exceptions, and Memory Management"   
-  deliverables:
-  - dtitle: "Programming Assignment: Regular Expressions Due"
-    dlink: "./Assignments/Regex"
-    points: 100   
-    rubricpath: "_pages/Assignments/asmt-regex.md"    
-  - dtitle: "Programming Assignment: Automata Handed Out"
-    dlink: "./Assignments/Automata"
-    points: 100    
-    rubricpath: "_pages/Assignments/asmt-automata.md"    
-- week: "8"
-  date: "1"
-  title: "Data Structures and Generics"  
-  link: "./Activities/DataStructures"
-- week: "8"
-  date: "2"
-  title: "The Lambda Calculus"
-  link: "./Activities/LambdaCalculus"
-  readings:
-  - rtitle: "Introduction to the Lambda Calculus"
-    rlink: "https://plato.stanford.edu/entries/lambda-calculus/" 
-  - rtitle: "Lambda Calculus Video"
-    rlink: "https://youtube.com/watch?v=3VQ382QG-y4"      
-  deliverables:
-  - dtitle: "Participation: First Self-Assessment Due"
-    dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10  
-    submission_types: "written"              
-- week: "9"
-  date: "0"
-  title: "The Lambda Calculus"
-- week: "9"
-  date: "1"
-  title: "The Compilation / Linking Process and Bytecode"  
-  link: "./Activities/CompilerLinker" 
-  readings:
-  - rtitle: "Compilers Ch. 2, 8"
-    rlink: false 
-  - rtitle: "How the Linker Works Video"
-    rlink: "https://youtube.com/watch?v=oXk87NRTL1Y"
-  - rtitle: "Static and Dynamic Linking Video"
-    rlink: "https://youtube.com/watch?v=UdMRcJwvWIY"     
-  deliverables:
-  - dtitle: "Programming Assignment: Automata Due"
-    dlink: "./Assignments/Automata"
-    points: 100  
-    rubricpath: "_pages/Assignments/asmt-automata.md"    
-- week: "9"
-  date: "2"
-  title: "Libraries"
-  link: "./Activities/Libraries"      
-  deliverables:
-  - dtitle: "Programming Assignment: Libraries Handed Out"
-    dlink: "./Assignments/Libraries"
-    points: 100     
-    rubricpath: "_pages/Assignments/asmt-libraries.md"      
-- week: "10"
-  date: "0"
-  title: "Grammars"   
-  link: "./Activities/Grammars"
-  readings:
-  - rtitle: "Compilers Ch. 3"
-    rlink: false    
-- week: "10"
-  date: "1"
-  title: "Grammars and Ambiguity"  
-- week: "10"
-  date: "2"
-  title: "Tokens and Scanning"
-  link: "./Activities/TokensScanning"  
-  deliverables:
-  - dtitle: "Programming Assignment: Libraries Due"
-    dlink: "./Assignments/Libraries"
-    points: 100  
-    rubricpath: "_pages/Assignments/asmt-libraries.md"        
-  - dtitle: "Lab: Scanning Handed Out"
-    dlink: "./Labs/Scanner"
-    points: 100     
-    rubricpath: "_pages/Labs/lab-scanner.md"        
-- week: "11"
-  date: "0"
-  title: "Parsing and Interpreting"   
-  link: "./Activities/ParserInterpreter"  
-  readings:
-  - rtitle: "Compilers Ch. 4-5"
-    rlink: false      
-- week: "11"
-  date: "1"
-  title: "Parsing and Interpreting: the LL(1) Parser" 
-- week: "11"
-  date: "2"
-  title: "Parsing and Interpreting"  
-  deliverables:
-  - dtitle: "Final Project: Project and Presentation Handed Out"
-    dlink: "Projects/Final"  
-    points: 100 
-    rubricpath: "_pages/Projects/proj-final.md"            
-- week: "12"
-  date: "0"
-  title: "Parsing and Interpreting"  
-- week: "13"
-  date: "0"
-  title: "Parsing and Interpreting"    
-- week: "13"
-  date: "1"
-  title: "Parsing and Interpreting: The LR(1) Parser"  
-  deliverables:
-  - dtitle: "Participation: Second Self-Assessment Handed Out"
-    dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10  
-    submission_types: "written"            
-- week: "13"
-  date: "2"
-  title: "Parsing and Interpreting"   
-  deliverables:
-  - dtitle: "Lab: Scanning Due"
-    dlink: "./Labs/Scanner"
-    points: 100   
-    rubricpath: "_pages/Labs/lab-scanner.md"        
-  - dtitle: "Lab: Parsing Handed Out"
-    dlink: "./Labs/Parser"
-    points: 100     
-    rubricpath: "_pages/Labs/lab-parser.md"        
-- week: "14"
-  date: "0"
-  title: "Parsing Workshop"   
-- week: "14"
-  date: "1"
-  title: "Parsing Workshop" 
-  deliverables:   
-  - dtitle: "Participation: Second Self-Assessment Due"
-    dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10    
-    submission_types: "written"        
-- week: "14"
-  date: "2"
-  title: "Abstract Syntax Trees and Review" 
-  link: "./Activities/AST" 
-  readings:
-  - rtitle: "Compilers Ch. 6"
-    rlink: false     
-  deliverables:
-  - dtitle: "Lab: Parsing Due"
-    dlink: "./Labs/Parser"
-    points: 100        
-    rubricpath: "_pages/Labs/lab-parser.md"            
-  - dtitle: "Final Project: Project and Presentation Due"
-    dlink: "Projects/Final"
-    points: 100  
+  - week: "0"
+    date: "0"
+    title: "Course Overview"
+    link: "../Ursinus-CS374-Overview"
+    deliverables:
+      - dtitle: "Programming Assignment: Warmup Handed Out"
+        dlink: "./Assignments/Warmup"
+        points: 10
+        submission_types: "noupload"
+  - week: "0"
+    date: "1"
+    title: "History of Programming Languages"
+    link: "../Ursinus-CS374-History"
+    deliverables:
+      - dtitle: "Participation: Pre-Assessment Handed Out"
+        dlink: "./Assignments/Participation/PreAssessment"
+        points: 10
+        submission_types: "written"
+  - week: "0"
+    date: "2"
+    title: "History of Programming Languages"
+  - week: "1"
+    date: "0"
+    title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"
+    link: "./Activities/Paradigms"
+    deliverables:
+      - dtitle: "Programming Assignment: Warmup Due"
+        dlink: "./Assignments/Warmup"
+        points: 10
+        submission_types: "noupload"
+    readings:
+      - rtitle: "PLAI Ch. 1"
+        rlink: false
+  - week: "1"
+    date: "1"
+    title: "Functional Programming"
+    link: "./Activities/Functional"
+    deliverables:
+      - dtitle: "Participation: Pre-Assessment Due"
+        dlink: "./Assignments/Participation/PreAssessment"
+        points: 10
+        submission_types: "written"
+      - dtitle: "Lab: Shell Handed Out"
+        dlink: "./Labs/Shell"
+        points: 100
+        rubricpath: "_pages/Labs/lab-shell.md"
+    readings:
+      - rtitle: "The Scheme Programming Language"
+        rlink: "https://www.scheme.com/tspl3/"
+  - week: "1"
+    date: "2"
+    title: "Functional Programming"
+    readings:
+      - rtitle: "PLAI Ch. 2"
+        rlink: false
+  - week: "2"
+    date: "0"
+    title: "Functional Programming"
+  - week: "2"
+    date: "1"
+    title: "Functional Programming"
+    deliverables:
+      - dtitle: "Lab: Shell Due"
+        dlink: "./Labs/Shell"
+        points: 100
+        rubricpath: "_pages/Labs/lab-shell.md"
+      - dtitle: "Programming Assignment: Functional Programming Handed Out"
+        dlink: "./Assignments/Functional"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-functional.md"
+    readings:
+      - rtitle: "Lispy - How to Write a Lisp Interpreter by Peter Norvig"
+        rlink: "http://norvig.com/lispy.html"
+      - rtitle: "PLAI Ch. 3"
+        rlink: false
+  - week: "2"
+    date: "2"
+    title: "Logic Programming"
+    link: "./Activities/Paradigms"
+    readings:
+      - rtitle: "Concise Introduction to Prolog"
+        rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
+  - week: "3"
+    date: "0"
+    title: "Scripting Languages"
+    link: "./Activities/Paradigms"
+    readings:
+      - rtitle: "Bash Syntax Reference"
+        rlink: "https://tiswww.case.edu/php/chet/bash/bashref.html"
+      - rtitle: "Bash Scripting Tutorial"
+        rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"
+      - rtitle: "Bash Scripting Video"
+        rlink: "https://youtube.com/watch?v=e7BufAVwDiM"
+  - week: "3"
+    date: "1"
+    title: "Scripting Languages"
+    readings:
+      - rtitle: "PLAI Ch. 4"
+        rlink: false
+  - week: "3"
+    date: "2"
+    title: "Scripting Languages"
+    deliverables:
+      - dtitle: "Programming Assignment: Functional Programming Due"
+        dlink: "./Assignments/Functional"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-functional.md"
+      - dtitle: "Programming Assignment: Shell Scripting Handed Out"
+        dlink: "./Assignments/Scripting"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-scripting.md"
+  - week: "4"
+    date: "0"
+    title: "Syntax and Semantics"
+    link: "./Activities/Syntax"
+  - week: "4"
+    date: "1"
+    title: "Syntax and Semantics"
+  - week: "4"
+    date: "2"
+    title: "Bindng and Scope"
+    link: "./Activities/BindingScope"
+    readings:
+      - rtitle: "PLAI CH. 5"
+        rlink: false
+  - week: "5"
+    date: "0"
+    title: "Regular Expressions"
+    link: "./Activities/Regex"
+    deliverables:
+      - dtitle: "Midterm Exam: Midterm Handed Out"
+        dlink: false
+        points: 100
+        submission_types: "written"
+    readings:
+      - rtitle: "Compilers Ch. 3.3"
+        rlink: false
+      - rtitle: "Regular Expressions Video"
+        rlink: "https://youtube.com/watch?v=528Jc3q86F8"
+  - week: "5"
+    date: "1"
+    title: "Regular Expressions"
+    deliverables:
+      - dtitle: "Programming Assignment: Shell Scripting Due"
+        dlink: "./Assignments/Scripting"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-scripting.md"
+  - week: "5"
+    date: "2"
+    title: "Regular Expressions"
+    deliverables:
+      - dtitle: "Midterm Exam: Midterm Due"
+        dlink: false
+        points: 100
+        submission_types: "written"
+  - week: "6"
+    date: "0"
+    title: "Finite Automata"
+    link: "./Activities/Automata"
+    deliverables:
+      - dtitle: "Programming Assignment: Regular Expressions Handed Out"
+        dlink: "./Assignments/Regex"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-regex.md"
+    readings:
+      - rtitle: "Compilers Ch. 3.4-3.6"
+        rlink: false
+      - rtitle: "Finite Automata Video"
+        rlink: "https://youtube.com/watch?v=vhiiia1_hC4"
+  - week: "6"
+    date: "1"
+    title: "Finite Automata"
+    deliverables:
+      - dtitle: "Participation: First Self-Assessment Handed Out"
+        dlink: "./Assignments/Participation/SelfAssessment"
+        points: 10
+        submission_types: "written"
+    readings:
+      - rtitle: "Compilers Ch. 7"
+        rlink: false
+  - week: "6"
+    date: "2"
+    title: "Data Types"
+    link: "./Activities/Types"
+    readings:
+      - rtitle: "PLAI Ch. 6"
+        rlink: false
+  - week: "7"
+    date: "2"
+    title: "Code Structure: Expressions and Conditionals"
+    link: "./Activities/CodeStructure"
+    readings:
+      - rtitle: "PLAI Ch. 7"
+        rlink: false
+  - week: "8"
+    date: "0"
+    title: "Code Structure: Functions, Exceptions, and Memory Management"
+    deliverables:
+      - dtitle: "Programming Assignment: Regular Expressions Due"
+        dlink: "./Assignments/Regex"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-regex.md"
+      - dtitle: "Programming Assignment: Automata Handed Out"
+        dlink: "./Assignments/Automata"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-automata.md"
+    readings:
+      - rtitle: "PLAI Ch. 8, 11"
+        rlink: false
+  - week: "8"
+    date: "1"
+    title: "Data Structures and Generics"
+    link: "./Activities/DataStructures"
+    readings:
+      - rtitle: "PLAI Ch. 9"
+        rlink: false
+  - week: "8"
+    date: "2"
+    title: "The Lambda Calculus"
+    link: "./Activities/LambdaCalculus"
+    deliverables:
+      - dtitle: "Participation: First Self-Assessment Due"
+        dlink: "./Assignments/Participation/SelfAssessment"
+        points: 10
+        submission_types: "written"
+    readings:
+      - rtitle: "Introduction to the Lambda Calculus"
+        rlink: "https://plato.stanford.edu/entries/lambda-calculus/"
+      - rtitle: "Lambda Calculus Video"
+        rlink: "https://youtube.com/watch?v=3VQ382QG-y4"
+  - week: "9"
+    date: "0"
+    title: "The Lambda Calculus"
+  - week: "9"
+    date: "1"
+    title: "The Compilation / Linking Process and Bytecode"
+    link: "./Activities/CompilerLinker"
+    deliverables:
+      - dtitle: "Programming Assignment: Automata Due"
+        dlink: "./Assignments/Automata"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-automata.md"
+    readings:
+      - rtitle: "Compilers Ch. 2, 8"
+        rlink: false
+      - rtitle: "How the Linker Works Video"
+        rlink: "https://youtube.com/watch?v=oXk87NRTL1Y"
+      - rtitle: "Static and Dynamic Linking Video"
+        rlink: "https://youtube.com/watch?v=UdMRcJwvWIY"
+  - week: "9"
+    date: "2"
+    title: "Libraries"
+    link: "./Activities/Libraries"
+    deliverables:
+      - dtitle: "Programming Assignment: Libraries Handed Out"
+        dlink: "./Assignments/Libraries"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-libraries.md"
+    readings:
+      - rtitle: "PLAI Ch. 10"
+        rlink: false
+  - week: "10"
+    date: "0"
+    title: "Grammars"
+    link: "./Activities/Grammars"
+    readings:
+      - rtitle: "Compilers Ch. 3"
+        rlink: false
+  - week: "10"
+    date: "1"
+    title: "Grammars and Ambiguity"
+  - week: "10"
+    date: "2"
+    title: "Tokens and Scanning"
+    link: "./Activities/TokensScanning"
+    deliverables:
+      - dtitle: "Programming Assignment: Libraries Due"
+        dlink: "./Assignments/Libraries"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-libraries.md"
+      - dtitle: "Lab: Scanning Handed Out"
+        dlink: "./Labs/Scanner"
+        points: 100
+        rubricpath: "_pages/Labs/lab-scanner.md"
+  - week: "11"
+    date: "0"
+    title: "Parsing and Interpreting"
+    link: "./Activities/ParserInterpreter"
+    readings:
+      - rtitle: "Compilers Ch. 4-5"
+        rlink: false
+  - week: "11"
+    date: "1"
+    title: "Parsing and Interpreting: the LL(1) Parser"
+  - week: "11"
+    date: "2"
+    title: "Parsing and Interpreting"
+    deliverables:
+      - dtitle: "Final Project: Project and Presentation Handed Out"
+        dlink: "Projects/Final"
+        points: 100
+        rubricpath: "_pages/Projects/proj-final.md"
+  - week: "12"
+    date: "0"
+    title: "Parsing and Interpreting"
+    readings:
+      - rtitle: "PLAI Ch. 15-16"
+        rlink: false
+  - week: "12"
+    date: "1"
+    title: "Parsing and Interpreting"
+  - week: "12"
+    date: "2"
+    title: "Parsing and Interpreting: The LR(1) Parser"
+    deliverables:
+      - dtitle: "Participation: Second Self-Assessment Handed Out"
+        dlink: "./Assignments/Participation/SelfAssessment"
+        points: 10
+        submission_types: "written"
+  - week: "13"
+    date: "0"
+    title: "Parsing and Interpreting"
+    deliverables:
+      - dtitle: "Lab: Scanning Due"
+        dlink: "./Labs/Scanner"
+        points: 100
+        rubricpath: "_pages/Labs/lab-scanner.md"
+      - dtitle: "Lab: Parsing Handed Out"
+        dlink: "./Labs/Parser"
+        points: 100
+        rubricpath: "_pages/Labs/lab-parser.md"
+  - week: "14"
+    date: "0"
+    title: "Parsing Workshop"
+    readings:
+      - rtitle: "PLAI Ch. 17"
+        rlink: false
+  - week: "14"
+    date: "1"
+    title: "Parsing Workshop"
+    deliverables:
+      - dtitle: "Participation: Second Self-Assessment Due"
+        dlink: "./Assignments/Participation/SelfAssessment"
+        points: 10
+        submission_types: "written"
+  - week: "14"
+    date: "2"
+    title: "Abstract Syntax Trees and Review"
+    link: "./Activities/AST"
+    deliverables:
+      - dtitle: "Lab: Parsing Due"
+        dlink: "./Labs/Parser"
+        points: 100
+        rubricpath: "_pages/Labs/lab-parser.md"
+      - dtitle: "Final Project: Project and Presentation Due"
+        dlink: "Projects/Final"
+        points: 100
+    readings:
+      - rtitle: "Compilers Ch. 6"
+        rlink: false
+  - week: "15"
+    date: "0"
+    title: "Review"
   
 university:
   semester: "Fall"
