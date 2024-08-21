@@ -14,8 +14,8 @@ info:
   class_notebook: https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS374%20Fall%202024
   ical: files/CS374.ics
   course_prerequisites: "CS174 with a grade of C- or higher."
-  course_start_date: "2022/08/26"
-  course_end_date: "2022/12/10"
+  course_start_date: "2024/08/26"
+  course_end_date: "2024/12/10"
   course_description: "Syntax, processors, representations and styles of programming languages. Study and comparison of several modern programming languages. Prerequisite: A grade of C– or higher in CS-174. Offered in the spring of odd years. Three hours per week. Four semester hours."
   welcome_message: "Welcome to CS374!"
   class_meets_days:
