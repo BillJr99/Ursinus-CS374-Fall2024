@@ -10,12 +10,12 @@ info:
   - section: "A"
   course_title: "Principles of Programming Languages"
   credit_hours: "4 Semester Hours"
-  course_homepage: "https://www.billmongan.com/Ursinus-CS374-Fall2022/"
-  class_notebook: https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS374%20Fall%202022
+  course_homepage: "https://www.billmongan.com/Ursinus-CS374-Fall2024/"
+  class_notebook: https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS374%20Fall%202024
   ical: files/CS374.ics
   course_prerequisites: "CS174 with a grade of C- or higher."
-  course_start_date: "2022/08/29"
-  course_end_date: "2022/12/09"
+  course_start_date: "2022/08/26"
+  course_end_date: "2022/12/10"
   course_description: "Syntax, processors, representations and styles of programming languages. Study and comparison of several modern programming languages. Prerequisite: A grade of C– or higher in CS-174. Offered in the spring of odd years. Three hours per week. Four semester hours."
   welcome_message: "Welcome to CS374!"
   class_meets_days:
@@ -29,29 +29,29 @@ info:
   class_meets_locations:
   - section:
     - day: "M"
-      starttime: "9:00 AM"
-      endtime: "9:50 AM"
-      place: "Pfahler 012"
+      starttime: "10:00 AM"
+      endtime: "10:50 AM"
+      place: "Thomas 319"
     - day: "W"
-      starttime: "9:00 AM"
-      endtime: "9:50 AM"
-      place: "Pfahler 012"
+      starttime: "10:00 AM"
+      endtime: "10:50 AM"
+      place: "Thomas 319"
     - day: "F"
-      starttime: "9:00 AM"
-      endtime: "9:50 AM"
-      place: "Pfahler 012"
+      starttime: "10:00 AM"
+      endtime: "10:50 AM"
+      place: "Thomas 319"
   midtermexam: 
     - mdate: "TBD"
       mstarttime: "TBD"
       mendtime: "TBD"
       mroom: "TBD"      
   finalexam: 
-    - fdate: "2022/12/12"
-      fstarttime: "09:00 AM"
-      fendtime: "12:00 PM"
-      froom: "PFA012"
-  flexible_submission_policy: "In the absence of <a href=\"#accommodations\">accommodations</a> arranged in advance with the instructor or college, all assignments are due at 10:59PM Eastern Time on the date(s) stated on the schedule.  Assignments will be accepted without prior permission following this time with a points deduction of 4% per day if submitted before 10:59 PM Eastern Time on the day submitted.  Each student will receive a total of 10 &quot;slack days&quot; for the semester with which to waive these grade reductions; for example, one assignment may be submitted 10 days late, or two assignments may be submitted 5 days late, with no grade reduction.  Should an exemption to this policy be requested and granted, a 5% per day reduction will be applied.  Extra credit will not be awarded for assignments submitted under the flexible submission policy.  Students with accommodations will receive additional &quot;slack days&quot; as specified within the accommodations letter; however, some deliverables cannot be subject to accommodations due to the time-sensitive nature of the assignment (for example, group assignments, presentations, and course surveys).  Students who add the class late shall receive additional slack days equal to the number of days between the start of classes and the first date that approval is given or that class is attended (whichever occurs first).  Under no circumstances (including accommodations) can late work be accepted after the final class meeting, nor during final exams week, nor after the exam." 
-  late_penalty_per_period: 4
+    - fdate: "TBD"
+      fstarttime: "TBD"
+      fendtime: "TBD"
+      froom: "TBD"
+  flexible_submission_policy: "In the absence of <a href=\"#accommodations\">accommodations</a> arranged in advance with the instructor or college, all assignments are due at 10:59PM Eastern Time on the date(s) stated on the schedule.  Assignments will be accepted without prior permission following this time with a points deduction of 8% per day if submitted before 10:59 PM Eastern Time on the day submitted.  Students may waive this policy up to three times during the semester for an extension of up to 7 days each; to elect this option, students must arrange this extension with the instructor at least 24 hours prior to the initial deadline.  Extra credit will not be awarded for assignments submitted under the flexible submission policy.  Students with accommodations will receive additional &quot;slack days&quot; as specified within the accommodations letter; however, some deliverables cannot be subject to accommodations due to the time-sensitive nature of the assignment (for example, group assignments, presentations, and course surveys).  Students who add the class late shall receive additional slack days equal to the number of days between the start of classes and the first date that approval is given or that class is attended (whichever occurs first).  Under no circumstances (including accommodations) can late work be accepted after the final class meeting, nor during final exams week, nor after the exam." 
+  late_penalty_per_period: 8
   late_penalty_period: "day"
   banner: |
     <div style="width: 100%; display: table; border-collapse:separate; border-spacing:5px;">
@@ -72,41 +72,33 @@ instructors:
 - name: William Mongan
   title: Professor
   email: wmongan@ursinus.edu
-  phone: "610-409-3410"
+  phone: "610-409-3268"
   office: "Pfahler Hall 101L"
   webpage_url: "http://www.billmongan.com"
   picture: /images/profile.png
   officehours:
   - day: "M"
-    starttime: "11:00 AM"
-    endtime: "12:00 PM"
+    starttime: "12:00 PM"
+    endtime: "1:30 PM"
     location: "Pfahler 101L"  
   - day: "T"
-    starttime: "9:00 AM"
-    endtime: "9:50 AM"
+    starttime: "11:00 AM"
+    endtime: "11:30 AM"
     location: "Pfahler 101L"   
   - day: "T"
-    starttime: "11:00 AM"
-    endtime: "12:00 PM"
+    starttime: "12:30 PM"
+    endtime: "1:30 PM"
     location: "Pfahler 101L"        
   - day: "W"
-    starttime: "11:00 AM"
-    endtime: "12:00 PM"
+    starttime: "12:00 PM"
+    endtime: "1:30 PM"
     location: "Pfahler 101L"         
   - day: "F"
     starttime: "12:00 PM"
-    endtime: "01:30 PM"
-    location: "Pfahler 101L or IDC Lobby for Tea Time"
+    endtime: "1:30 PM"
+    location: "Pfahler 101L"
     
 textbooks:
-- title: "Programming Language Concepts"
-  authors: "Carlo Ghezzi and Mehdi Jazayeri"
-  edition: "3rd Edition"
-  isbn: "978-0471104261"
-  link: https://ursinus.bncollege.com/c/Programming-Language-Concepts/p/MBS_283262_new?currentCampus=33&currentTerm=33_1_22_F&currentCourse=33_1_22_F_40_374_1
-  image: https://bookinfo.mbsdirect.net/TextbookInfo/Covers/0471104264.gif
-  isrequired: true 
-  freelyavailable: false
 - title: "Introduction to Compilers and Language Design"
   authors: "Douglas Thain"
   edition: "2nd Edition"
@@ -195,17 +187,11 @@ schedule:
     submission_types: "written"    
 - week: "0"
   date: "2"
-  title: "History of Programming Languages"  
-  readings:
-  - rtitle: "PLC Ch. 1"
-    rlink: false  
+  title: "History of Programming Languages"   
 - week: "1"
   date: "0"
   title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"   
-  link: "./Activities/Paradigms"
-  readings:
-    - rtitle: "PLC Ch. 6"
-      rlink: false     
+  link: "./Activities/Paradigms"   
   deliverables:
   - dtitle: "Programming Assignment: Warmup Due"
     dlink: "./Assignments/Warmup"
@@ -224,9 +210,7 @@ schedule:
     dlink: "./Labs/Shell"
     points: 100   
     rubricpath: "_pages/Labs/lab-shell.md"    
-  readings:
-  - rtitle: "PLC Ch. 7"
-    rlink: false  
+  readings: 
   - rtitle: "The Scheme Programming Language"
     rlink: "https://www.scheme.com/tspl3/"
 - week: "1"
@@ -256,9 +240,7 @@ schedule:
   link: "./Activities/Paradigms"
   readings:
     - rtitle: "Concise Introduction to Prolog"
-      rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"   
-    - rtitle: "PLC Ch. 8"
-      rlink: false   
+      rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"    
 - week: "3"
   date: "0"
   title: "Scripting Languages" 
@@ -288,10 +270,7 @@ schedule:
 - week: "4"
   date: "0"
   title: "Syntax and Semantics"
-  link: "./Activities/Syntax"
-  readings:
-  - rtitle: "PLC Ch. 2"
-    rlink: false   
+  link: "./Activities/Syntax"  
 - week: "4"
   date: "1"
   title: "Syntax and Semantics"
@@ -351,9 +330,7 @@ schedule:
     dlink: "./Assignments/Participation/SelfAssessment"
     points: 10 
     submission_types: "written"   
-  readings:
-  - rtitle: "PLC Ch. 3"
-    rlink: false      
+  readings:     
   - rtitle: "Compilers Ch. 7"
     rlink: false       
 - week: "7"
@@ -363,16 +340,10 @@ schedule:
 - week: "7"
   date: "2"
   title: "Code Structure: Expressions and Conditionals"
-  link: "./Activities/CodeStructure"
-  readings:
-  - rtitle: "PLC Ch. 4"
-    rlink: false      
+  link: "./Activities/CodeStructure"      
 - week: "8"
   date: "0"
-  title: "Code Structure: Functions, Exceptions, and Memory Management"
-  readings:
-  - rtitle: "Compilers Ch. 9"
-    rlink: false     
+  title: "Code Structure: Functions, Exceptions, and Memory Management"   
   deliverables:
   - dtitle: "Programming Assignment: Regular Expressions Due"
     dlink: "./Assignments/Regex"
@@ -386,9 +357,6 @@ schedule:
   date: "1"
   title: "Data Structures and Generics"  
   link: "./Activities/DataStructures"
-  readings:
-  - rtitle: "PLC Ch. 5"
-    rlink: false  
 - week: "8"
   date: "2"
   title: "The Lambda Calculus"
@@ -527,74 +495,69 @@ schedule:
   
 university:
   semester: "Fall"
-  academicyear: "2022-23"
+  academicyear: "2024-25"
   fall:
   - kname: "Add Deadline"
-    kdate: "2022/09/10"
+    kdate: "2024/09/6"
     kdisplay: true
-  - kname: "Drop with a W Deadline"
-    kdate: "2022/10/27"
-    kdisplay: true  
   - kname: "Mid Semester Grades Posted"
-    kdate: "2022/10/15"
+    kdate: "2024/10/11"
     kdisplay: false
+  - kname: "Drop with a W Deadline"
+    kdate: "2024/11/19"
+    kdisplay: true      
   - kname: "Reading Day"
-    kdate: "2022/12/11"
+    kdate: "2024/12/10"
     kdisplay: true
   - kname: "Finals Week Begins"
-    kdate: "2022/12/13"
+    kdate: "2024/12/11"
     kdisplay: false
   - kname: "Finals Week Ends"
-    kdate: "2022/12/18"
+    kdate: "2024/12/17"
     kdisplay: false
   spring:
   - kname: "Add Deadline"
-    kdate: "2023/02/1"
-    kdisplay: true
-  - kname: "Drop with a W Deadline"
-    kdate: "2023/03/23"
+    kdate: "2025/02/4"
     kdisplay: true
   - kname: "Mid Semester Grades Posted"
-    kdate: "2023/03/4"
+    kdate: "2025/03/7"
     kdisplay: false
-  - kname: "CoSA"
-    kdate: "2023/04/21"
-    kdisplay: true
-  - kname: "Designated Thursday Schedule"
-    kdate: "2023/05/04"
-    kdisplay: true
-  - kname: "Designated Thursday Schedule"
-    kdate: "2023/05/3"
+  - kname: "Drop with a W Deadline"
+    kdate: "2025/04/18"
     kdisplay: true    
+  - kname: "CoSA"
+    kdate: "2025/04/23"
+    kdisplay: true   
   - kname: "Reading Day"
-    kdate: "2023/05/5"
-    kdisplay: false    
-  - kname: "Baccalaureate"
-    kdate: "2023/05/13"
-    kdisplay: false
-  - kname: "Commencement"
-    kdate: "2023/05/14"
+    kdate: "2025/05/8"
     kdisplay: false
   - kname: "Finals Week Begins"
-    kdate: "2023/05/06"
+    kdate: "2025/05/09"
     kdisplay: false
   - kname: "Finals Week Ends"
-    kdate: "2023/05/12"
+    kdate: "2025/05/15"
+    kdisplay: false    
+  - kname: "Baccalaureate"
+    kdate: "2025/05/16"
+    kdisplay: false
+  - kname: "Commencement"
+    kdate: "2025/05/17"
     kdisplay: false    
   fallholidays:
-  - date: "2022/10/17"
-  - date: "2022/10/18"
-  - date: "2022/11/24"
-  - date: "2022/11/25"
-  - date: "2022/11/26" 
+  - date: "2024/10/14"
+  - date: "2024/10/15"
+  - date: "2024/10/16"
+  - date: "2024/11/27"
+  - date: "2024/11/28"
+  - date: "2024/11/29" 
   springholidays:
-  - date: "2023/01/17"  
-  - date: "2023/01/18"
-  - date: "2023/03/6"  
-  - date: "2023/03/7"
-  - date: "2023/03/8" 
-  - date: "2023/03/9"
-  - date: "2023/03/10"
+  - date: "2025/01/20"  
+  - date: "2025/01/21"
+  - date: "2025/03/10"  
+  - date: "2025/03/11"
+  - date: "2025/03/12" 
+  - date: "2025/03/13"
+  - date: "2025/03/14"
   
 ---
 
