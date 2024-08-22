@@ -195,7 +195,8 @@ schedule:
         submission_types: "written"
   - week: "0"
     date: "2"
-    title: "History of Programming Languages"
+    title: "Modern Language Features"
+    link: "./Activities/ModernFeatures"
   - week: "1"
     date: "0"
     title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"
@@ -522,7 +523,7 @@ schedule:
         submission_types: "written"
   - week: "14"
     date: "2"
-    title: "Abstract Syntax Trees and Review"
+    title: "Abstract Syntax Trees"
     link: "./Activities/AST"
     deliverables:
       - dtitle: "Lab: Parsing Due"
