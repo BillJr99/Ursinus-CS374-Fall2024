@@ -7,6 +7,7 @@ title: "CS374: Principles of Programming Languages - Participation Self Assessme
 info:
   coursenum: CS374
   points: 10
+  submission: Please submit a word processed document for this assignment.
   
 tags:
   - participation
