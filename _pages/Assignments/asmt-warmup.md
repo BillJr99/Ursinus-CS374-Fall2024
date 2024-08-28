@@ -6,8 +6,8 @@ title: "CS374: Principles of Programming Languages - Warmup"
 
 info:
   coursenum: CS374
-  officehourspoll: "https://doodle.com/meeting/participate/id/bY6ox6Od"
-  class_notebook: "https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS374%20Fall%202022"
+  officehourspoll: "https://www.when2meet.com/?26146827-6VkZv"
+  class_notebook: "https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS374%20Fall%202024"
   class_notebook_name: "OneNote"
   chatname: "Microsoft Teams"
   submission: "We will complete this assignment using Teams, so there is no need to write up any documentation (as we will in future programming assignments) nor is it necessary to submit anything to Canvas.  It is fine to just follow the directions in each part and send me messages as appropriate!"
