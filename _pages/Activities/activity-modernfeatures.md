@@ -248,65 +248,121 @@ tags:
 
 | Before: Raw Pointers | After: `unique_ptr` |
 |----------------------|---------------------|
-| ```cpp               | ```cpp              |
-| #include <iostream>  | #include <iostream> |
-|                      | #include <memory>  // For std::unique_ptr |
-| class Resource {     |                     |
-| public:              | class Resource {    |
-|     Resource() { std::cout << "Resource acquired\n"; } | public: |
-|     ~Resource() { std::cout << "Resource destroyed\n"; } | Resource() { std::cout << "Resource acquired\n"; } |
-|     void say_hello() const { std::cout << "Hello from Resource\n"; } | ~Resource() { std::cout << "Resource destroyed\n"; } |
-| };                   | void say_hello() const { std::cout << "Hello from Resource\n"; } |
-|                      | };                  |
-| void raw_pointer_example() { |             |
-|     Resource* res = new Resource(); | void unique_pointer_example() { |
-|     res->say_hello(); | std::unique_ptr<Resource> res = std::make_unique<Resource>(); |
-|                      | res->say_hello();   |
-|     // Simulate transferring ownership (forgetting to delete might cause a memory leak) | |
-|     Resource* res2 = res; | // Transferring ownership with std::move |
-|     res = nullptr;    | std::unique_ptr<Resource> res2 = std::move(res); |
-|                      |                     |
-|     // Resource cleanup | // No need to manually delete, as unique_ptr handles this automatically |
-|     delete res2; // If we forget this, it causes a memory leak. | // Resource will be destroyed when res2 goes out of scope |
-| }                    | }                   |
-|                      |                     |
-| int main() {         | int main() {        |
-|     raw_pointer_example(); | unique_pointer_example(); |
-|     return 0;        | return 0;           |
-| }                    | }                   |
-| ```                  | ```                 |
+| ```cpp               
+#include <iostream>
+
+class Resource {
+public:
+    Resource() { std::cout << "Resource acquired\n"; }
+    ~Resource() { std::cout << "Resource destroyed\n"; }
+    void say_hello() const { std::cout << "Hello from Resource\n"; }
+};
+
+void raw_pointer_example() {
+    Resource* res = new Resource();
+    res->say_hello();
+
+    // Simulate transferring ownership (forgetting to delete might cause a memory leak)
+    Resource* res2 = res;
+    res = nullptr;
+
+    // Resource cleanup
+    delete res2; // If we forget this, it causes a memory leak.
+}
+
+int main() {
+    raw_pointer_example();
+    return 0;
+}
+``` | ```cpp
+#include <iostream>
+#include <memory>  // For std::unique_ptr
+
+class Resource {
+public:
+    Resource() { std::cout << "Resource acquired\n"; }
+    ~Resource() { std::cout << "Resource destroyed\n"; }
+    void say_hello() const { std::cout << "Hello from Resource\n"; }
+};
+
+void unique_pointer_example() {
+    std::unique_ptr<Resource> res = std::make_unique<Resource>();
+    res->say_hello();
+
+    // Transferring ownership with std::move
+    std::unique_ptr<Resource> res2 = std::move(res);
+
+    // No need to manually delete, as unique_ptr handles this automatically
+    // Resource will be destroyed when res2 goes out of scope
+}
+
+int main() {
+    unique_pointer_example();
+    return 0;
+}
+``` |
 
 ## Example 2: Using `shared_ptr` instead of Raw Pointers
 
 | Before: Raw Pointers | After: `shared_ptr` |
 |----------------------|---------------------|
-| ```cpp               | ```cpp              |
-| #include <iostream>  | #include <iostream> |
-|                      | #include <memory>  // For std::shared_ptr |
-| class Resource {     |                     |
-| public:              | class Resource {    |
-|     Resource() { std::cout << "Resource acquired\n"; } | public: |
-|     ~Resource() { std::cout << "Resource destroyed\n"; } | Resource() { std::cout << "Resource acquired\n"; } |
-|     void say_hello() const { std::cout << "Hello from Resource\n"; } | ~Resource() { std::cout << "Resource destroyed\n"; } |
-| };                   | void say_hello() const { std::cout << "Hello from Resource\n"; } |
-|                      | };                  |
-| void raw_pointer_shared_example() { |             |
-|     Resource* res = new Resource(); | void shared_pointer_example() { |
-|     // Multiple "owners" of the same resource | std::shared_ptr<Resource> res = std::make_shared<Resource>(); |
-|     Resource* res1 = res; |                     |
-|     Resource* res2 = res; | // Multiple shared_ptr instances share ownership of the same resource |
-|                      | std::shared_ptr<Resource> res1 = res; |
-|     res1->say_hello(); | std::shared_ptr<Resource> res2 = res; |
-|     res2->say_hello(); |                     |
-|                      | res1->say_hello();   |
-|     // Manually managing cleanup | res2->say_hello(); |
-|     delete res1;  // Deleting res1 here makes res2 a dangling pointer | |
-|     // delete res2;  // If uncommented, this would cause undefined behavior (double delete) | // No need to manually delete; the resource is automatically deleted |
-| }                    | // when the last shared_ptr (res, res1, or res2) goes out of scope |
-|                      | }                   |
-| int main() {         | int main() {        |
-|     raw_pointer_shared_example(); | shared_pointer_example(); |
-|     return 0;        | return 0;           |
-| }                    | }                   |
-| ```                  | ```                 |
+| ```cpp               
+#include <iostream>
+
+class Resource {
+public:
+    Resource() { std::cout << "Resource acquired\n"; }
+    ~Resource() { std::cout << "Resource destroyed\n"; }
+    void say_hello() const { std::cout << "Hello from Resource\n"; }
+};
+
+void raw_pointer_shared_example() {
+    Resource* res = new Resource();
+
+    // Multiple "owners" of the same resource
+    Resource* res1 = res;
+    Resource* res2 = res;
+
+    res1->say_hello();
+    res2->say_hello();
+
+    // Manually managing cleanup
+    delete res1;  // Deleting res1 here makes res2 a dangling pointer
+    // delete res2;  // If uncommented, this would cause undefined behavior (double delete)
+}
+
+int main() {
+    raw_pointer_shared_example();
+    return 0;
+}
+``` | ```cpp
+#include <iostream>
+#include <memory>  // For std::shared_ptr
+
+class Resource {
+public:
+    Resource() { std::cout << "Resource acquired\n"; }
+    ~Resource() { std::cout << "Resource destroyed\n"; }
+    void say_hello() const { std::cout << "Hello from Resource\n"; }
+};
+
+void shared_pointer_example() {
+    std::shared_ptr<Resource> res = std::make_shared<Resource>();
+
+    // Multiple shared_ptr instances share ownership of the same resource
+    std::shared_ptr<Resource> res1 = res;
+    std::shared_ptr<Resource> res2 = res;
+
+    res1->say_hello();
+    res2->say_hello();
+
+    // No need to manually delete; the resource is automatically deleted
+    // when the last shared_ptr (res, res1, or res2) goes out of scope
+}
+
+int main() {
+    shared_pointer_example();
+    return 0;
+}
+``` |
 
