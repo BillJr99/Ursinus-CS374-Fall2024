@@ -257,7 +257,7 @@ schedule:
     link: "./Activities/Paradigms"
     readings:
       - rtitle: "Concise Introduction to Prolog"
-        rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
+        rlink: "http://matuszek.org/prolog/prolog.html"
   - week: "3"
     date: "0"
     title: "Scripting Languages"
