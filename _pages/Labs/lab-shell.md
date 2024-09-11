@@ -114,7 +114,7 @@ Run this command to make the file "executable" (so that you can run it like a co
 
 Finally, run the script: `./dobackup.sh`
 
-This will create a file called myhomedirectory-2021-01-17.tar.bz2 (or whatever today's date is for you!).  This is a compressed file, like a zip file, that contains all the contents of your home directory.  You can remove it like this:
+This will create a file called `myhomedirectory-2021-01-17.tar.bz2` (or whatever today's date is for you!).  This is a compressed file, like a zip file, that contains all the contents of your home directory.  You can remove it like this:
 
 `rm myhomedirectory-2021-01-17.tar.bz2` (substitute today's date for the date in the filename).
 
