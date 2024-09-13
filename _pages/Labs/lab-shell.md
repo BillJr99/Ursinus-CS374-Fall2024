@@ -124,3 +124,7 @@ Notice that the script creates a variable called `TODAY`, set equal to today's d
 2. **What does the `echo` command do?**
 
 In addition to answering the questions above, modify and submit a second script that creates a variable called `BACKUPLOCATION` containing the name of any directory you like, and modify the `tar` command of your script to backup that location instead of your home directory.
+
+### Running Commands
+
+Using `git`, we can clone a scheme interpreter if you do not already have one (i.e., by running `sudo apt install mit-scheme` on Ubuntu/Linux, or `brew install mit-scheme` on the mac).  Run the following command to install a `scheme` interpreter written in Python: `git clone https://github.com/vladimirfomene/scheme-interpreter.git`.  Later, when we write Scheme programs, we can save them in text files using `vim` or `nano` like you used in this lab, and then execute them by running `python scheme.py <your scheme file>`.
