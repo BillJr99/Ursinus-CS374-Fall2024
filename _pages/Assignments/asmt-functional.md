@@ -71,9 +71,13 @@ Define an anonymous or secondary lambda procedure to compute the discriminant of
 
 Specificaly, your anonymous lambda should compute:
 
-<span>\\(\sqrt{b^{2} - 4ac}\\)</span><br>
+<span>\\(b^{2} - 4ac\\)</span><br>
 
-And you can compose and return a list from your main lambda procedure that adds to, and subtracts from, the discriminant to obtain your two roots.
+And you can compose and return a list from your main lambda procedure that adds to, and subtracts from, the discriminant to obtain your two roots.  
+
+For your convenience, you may wish to also calculate the square root of the discriminant within this anonymous procedure (and you should feel free to do so!):
+
+<span>\\(\sqrt{b^{2} - 4ac}\\)</span><br>
 
 ## Part 3: Mapping
 
