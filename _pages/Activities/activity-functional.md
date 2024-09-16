@@ -68,7 +68,7 @@ info:
 
         (largest (list 1 2 4 3))
         ]]></script>         
-      title: "Declarative Languages - Functional"
+      title: "Declarative Languages - Functional Programming with Scheme"
       questions:
         - "What is a statement in Scheme?"
         - "What shared variables exist in this program?"
@@ -139,72 +139,6 @@ info:
         - "Compare and constrast closures and objects."
         - "Using the <code>pair?</code> directive, which returns <code>&#35;t</code> if the parameter is a nonempty list, add a check to one of these list recursion examples to ensure that <code>null</code> is returned if an empty list is passed."
         - "Write a function that accepts a list and an operator as parameters, such as addition.  Apply that operator to the whole list recursively; for example, if the operator is the addition operator, return the sum of the list.  If it is the multiplication operator, return the product of all items in the list."
-    - model: |
-        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
-        (define L (list 'a 'b 'c))
-        (car L)
-        (cdr L)
-        
-        (define x (+ 3 2))
-        (+ x 5)
-        
-        (define add +)
-        (add 3 2)
-        ]]></script>
-        <br>
-        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
-        (define square
-          (lambda(n)
-            (* n n)
-          )
-        )
-
-        (define pow
-          (lambda(n k)
-            (if (= k 0)
-              1
-              (* n (pow n (- k 1)))
-            )
-          )
-        )
-              
-        (square (pow 5 3))
-        ]]></script> 
-        <br>
-        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
-        (define sumlist 
-          (lambda(L)
-            (if (null? (cdr L))
-              (car L)
-              (+ (car L) (sumlist (cdr L))) 
-            )    
-          )  
-        )
-
-        (sumlist (list 1 2 3))
-        ]]></script> 
-        <br>
-        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
-        (define largest
-          (lambda(L)
-            (if (null? (cdr L))
-              (car L)
-              (if (>= (car L) (largest (cdr L)))
-                (car L)
-                (largest (cdr L))
-              )
-            )  
-          )
-        )
-
-        (largest (list 1 2 4 3))
-        ]]></script>         
-      title: "Declarative Languages - Functional"
-      questions:
-        - "What is a statement in Scheme?"
-        - "What shared variables exist in this program?"
-        - "What are some potential advantages of Functional Programming as a paradigm?" 
-        - "How might you improve upon the implementation of the <code>largest</code> function?"  
     - model: |
         <script type="syntaxhighlighter" class="brush: python"><![CDATA[
         # Define the sumlist function using a lambda and recursion
