@@ -278,6 +278,13 @@ schedule:
   - week: "3"
     date: "2"
     title: "Scripting Languages"
+  - week: "4"
+    date: "0"
+    title: "Syntax and Semantics"
+    link: "./Activities/Syntax"
+  - week: "4"
+    date: "1"
+    title: "Syntax and Semantics"
     deliverables:
       - dtitle: "Programming Assignment: Functional Programming Due"
         dlink: "./Assignments/Functional"
@@ -286,14 +293,7 @@ schedule:
       - dtitle: "Programming Assignment: Shell Scripting Handed Out"
         dlink: "./Assignments/Scripting"
         points: 100
-        rubricpath: "_pages/Assignments/asmt-scripting.md"
-  - week: "4"
-    date: "0"
-    title: "Syntax and Semantics"
-    link: "./Activities/Syntax"
-  - week: "4"
-    date: "1"
-    title: "Syntax and Semantics"
+        rubricpath: "_pages/Assignments/asmt-scripting.md"    
   - week: "4"
     date: "2"
     title: "Bindng and Scope"
@@ -318,11 +318,6 @@ schedule:
   - week: "5"
     date: "1"
     title: "Regular Expressions"
-    deliverables:
-      - dtitle: "Programming Assignment: Shell Scripting Due"
-        dlink: "./Assignments/Scripting"
-        points: 100
-        rubricpath: "_pages/Assignments/asmt-scripting.md"
   - week: "5"
     date: "2"
     title: "Regular Expressions"
@@ -336,6 +331,10 @@ schedule:
     title: "Finite Automata"
     link: "./Activities/Automata"
     deliverables:
+      - dtitle: "Programming Assignment: Shell Scripting Due"
+        dlink: "./Assignments/Scripting"
+        points: 100
+        rubricpath: "_pages/Assignments/asmt-scripting.md"    
       - dtitle: "Programming Assignment: Regular Expressions Handed Out"
         dlink: "./Assignments/Regex"
         points: 100
