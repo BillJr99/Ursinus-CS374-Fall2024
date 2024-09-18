@@ -126,6 +126,23 @@ info:
         (define L2 '(4 5 6))
         (define L3 (map - L1 L2))
         (apply + L3)
+        ((lambda (x) (* x x)) 5)
+        (map (lambda (x) (* x x)) '(1 2 3 4 5))
+        ]]></script>    
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define (make-counter)
+          (let ((count 0)) ; This is the environment the closure captures
+            (lambda ()     ; The lambda function forms the closure
+              (set! count (+ count 1)) ; Modifies the captured variable 'count'
+              count)))
+        
+        (define counter1 (make-counter))
+        (define counter2 (make-counter))
+        
+        (counter1) ; Returns 1
+        (counter1) ; Returns 2
+        (counter2) ; Returns 1
         ]]></script>        
       title: "The Scheme Programming Language"
       questions: 
