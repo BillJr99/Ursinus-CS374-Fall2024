@@ -79,6 +79,18 @@ For your convenience, you may wish to also calculate the square root of the disc
 
 <span>\\(\sqrt{b^{2} - 4ac}\\)</span><br>
 
+### What to Do
+
+Begin by writing the quadratic formula as a function that calls subfunctions.  Define each of these functions.  For example, you might have `quadratic` call `discriminant` and `plusminus`.  `discriminant` computes the discriminant, and `plusminus` returns a list of values consisting of `a + b` and `a - b` for paramaters `a` and `b`.  Note that when dividing a list of values by a scalar (i.e., dividing the `plusorminus` by `2 * a`, you'll need a function that dividies a list of two items by a scalar.  The division operator does not do this natively.  Here is a function you can use for this purpose:
+
+```scheme
+(define div2 (lambda (L x)
+   (list (/ (car L) x) (/ (car (cdr L)) x))
+))
+```
+
+Test this function by calling `quadratic` with example values.  Then, modify your program by replacing each function call with the `lambda` of the function (i.e., everything inside the `define` statement).  Repeat this process until you have no more function calls, but only anonymous inner `lambda` statements.  You should have a one-line main function that composes all your lambdas together!  Run this, and you should obtain the same results as before. 
+
 ## Part 3: Mapping
 
 Using an anonymous `lambda` procedure, create a `map` that applies your anonymous `lambda` to two lists.  `map` works like this:
@@ -86,6 +98,8 @@ Using an anonymous `lambda` procedure, create a `map` that applies your anonymou
 ```
 (map <your lambda procedure> '(1 2 3) '(4 5 6))
 ```
+
+Your lambda procedure could be a function or an operator like `*` (which, if used in combination with `+` below, gives you the dot product of two vectors!).
 
 This map will apply your lambda procedure to each pair of items in the list (1 and 4, 2 and 5, and 4 and 6).  Your `lambda` should accept, then, two parameters.  Modify this map to multiply each pair of items together.
 
