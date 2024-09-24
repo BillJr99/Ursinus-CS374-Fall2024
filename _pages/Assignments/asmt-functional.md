@@ -113,7 +113,16 @@ Next, you can use `apply` to reduce this list.  Prepend the following (and balna
 
 Write a `lambda` procedure called `czr` which returns the last item in the list.  If the `cdr` of the list is `null`, then you have found the last item: otherwise, you can recurse into `czr` on the `cdr` of the list until the last item is found.
 
-Write a second `lambda` function called `cxr` that returns everything **except** the last item in the list.  You may write or find (and cite) a procedure to reverse a list, and note that `cxr` is the `cdr` of the reverse of a list, reversed again.
+Write a second `lambda` function called `cxr` that returns everything **except** the last item in the list.  Note that `cxr` is the `cdr` of the reverse of a list, reversed again.  Here is a `reverse` function that you can use:
+
+```scheme
+(define (reverse lst)
+  (define (reverse-helper lst acc)
+    (if (null? lst)
+        acc
+        (reverse-helper (cdr lst) (cons (car lst) acc))))
+  (reverse-helper lst '()))
+```
 
 You can append two lists together as follows (where `'(1 2 3)` and `'(4 5 6)` are lists that can also be variables or recursive function calls that return lists!  The result is `(1 2 3 4 5 6)`):
 
