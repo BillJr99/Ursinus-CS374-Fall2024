@@ -79,6 +79,8 @@ For your convenience, you may wish to also calculate the square root of the disc
 
 <span>\\(\sqrt{b^{2} - 4ac}\\)</span><br>
 
+Note that the `sqrt` function is built into Scheme, so you can `(sqrt x)` for some expression `x`.
+
 ### What to Do
 
 Begin by writing the quadratic formula as a function that calls subfunctions.  Define each of these functions.  For example, you might have `quadratic` call `discriminant` and `plusminus`.  `discriminant` computes the discriminant, and `plusminus` returns a list of values consisting of `a + b` and `a - b` for paramaters `a` and `b`.  Note that when dividing a list of values by a scalar (i.e., dividing the `plusorminus` by `2 * a`, you'll need a function that dividies a list of two items by a scalar.  The division operator does not do this natively.  Here is a function you can use for this purpose:
@@ -122,10 +124,4 @@ Write a second `lambda` function called `cxr` that returns everything **except**
         acc
         (reverse-helper (cdr lst) (cons (car lst) acc))))
   (reverse-helper lst '()))
-```
-
-You can append two lists together as follows (where `'(1 2 3)` and `'(4 5 6)` are lists that can also be variables or recursive function calls that return lists!  The result is `(1 2 3 4 5 6)`):
-
-```
-(append (list 1 2 3) (list 4 5 6))
 ```
