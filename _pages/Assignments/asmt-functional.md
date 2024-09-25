@@ -55,7 +55,7 @@ When you run `scheme`, you'll be presented with an interpreter where you can wri
 
 `(load "myfile.scm")`
 
-Finally, you can clone this git repository that provides a `scheme.py` Python interpreter: `git clone https://github.com/vladimirfomene/scheme-interpreter.git`.  You can run it via `python scheme.py myfile.scm`.
+Finally, you can clone this git repository that provides a `scheme.py` Python interpreter: `git clone https://github.com/BillJr99/scheme-interpreter.git`.  You can run it via `python scheme.py myfile.scm`.
 
 ## Part 1: Warmup with Lambda Procedures
 
