@@ -232,7 +232,7 @@ tags:
 
 ## Installing Scheme
 
-You can `git clone https://github.com/vladimirfomene/scheme-interpreter.git` which will give you a scheme.py that you can run via `python scheme.py <your scheme file`, or do one of the following:
+You can `git clone https://github.com/BillJr99/scheme-interpreter.git` which will give you a scheme.py that you can run via `python scheme.py <your scheme file`, or do one of the following:
 
 * **Cygwin (Windows):** Install `guile` from the Cygwin installer
 * **Ubuntu (Linux):** `sudo apt install mit-scheme`
