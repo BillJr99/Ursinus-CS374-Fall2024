@@ -115,7 +115,7 @@ Next, you can use `apply` to reduce this list.  Prepend the following (and balna
 
 Write a `lambda` procedure called `czr` which returns the last item in the list.  If the `cdr` of the list is `null`, then you have found the last item: otherwise, you can recurse into `czr` on the `cdr` of the list until the last item is found.
 
-Write a second `lambda` function called `cxr` that returns everything **except** the last item in the list.  Note that `cxr` is the `cdr` of the reverse of a list, reversed again.  Here is a `reverse` function that you can use:
+Write a second `lambda` function called `cxr` that returns everything **except** the last item in the list.  Note that `cxr` is the `cdr` of the reverse of a list, reversed again.  Here is a `reverse-list` function that you can use:
 
 ```scheme
 (define reverse-helper (lambda (remaining reversed)
@@ -125,7 +125,7 @@ Write a second `lambda` function called `cxr` that returns everything **except**
 	)
 ))
 
-(define reverse (lambda (lst)
+(define reverse-list (lambda (lst)
   (reverse-helper lst '())
 ))
 ```
