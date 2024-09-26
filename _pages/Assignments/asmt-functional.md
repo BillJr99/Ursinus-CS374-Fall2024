@@ -118,10 +118,14 @@ Write a `lambda` procedure called `czr` which returns the last item in the list.
 Write a second `lambda` function called `cxr` that returns everything **except** the last item in the list.  Note that `cxr` is the `cdr` of the reverse of a list, reversed again.  Here is a `reverse` function that you can use:
 
 ```scheme
-(define (reverse lst)
-  (define (reverse-helper lst acc)
-    (if (null? lst)
-        acc
-        (reverse-helper (cdr lst) (cons (car lst) acc))))
-  (reverse-helper lst '()))
+(define reverse-helper (lambda (remaining reversed)
+    (if (null? remaining)
+        reversed
+        (reverse-helper (cdr remaining) (cons (car remaining) reversed))
+	)
+))
+
+(define reverse (lambda (lst)
+  (reverse-helper lst '())
+))
 ```
