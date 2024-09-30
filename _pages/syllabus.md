@@ -305,11 +305,6 @@ schedule:
     date: "0"
     title: "Regular Expressions"
     link: "./Activities/Regex"
-    deliverables:
-      - dtitle: "Midterm Exam: Midterm Handed Out"
-        dlink: false
-        points: 100
-        submission_types: "written"
     readings:
       - rtitle: "Compilers Ch. 3.3"
         rlink: false
@@ -322,10 +317,10 @@ schedule:
     date: "2"
     title: "Regular Expressions"
     deliverables:
-      - dtitle: "Midterm Exam: Midterm Due"
+      - dtitle: "Midterm Exam: Midterm Handed Out"
         dlink: false
         points: 100
-        submission_types: "written"
+        submission_types: "written"    
   - week: "6"
     date: "0"
     title: "Finite Automata"
@@ -362,6 +357,11 @@ schedule:
     readings:
       - rtitle: "PLAI Ch. 6"
         rlink: false
+     deliverables:
+      - dtitle: "Midterm Exam: Midterm Due"
+        dlink: false
+        points: 100
+        submission_types: "written"       
   - week: "7"
     date: "2"
     title: "Code Structure: Expressions and Conditionals"
