@@ -357,7 +357,7 @@ schedule:
     readings:
       - rtitle: "PLAI Ch. 6"
         rlink: false
-     deliverables:
+    deliverables:
       - dtitle: "Midterm Exam: Midterm Due"
         dlink: false
         points: 100
