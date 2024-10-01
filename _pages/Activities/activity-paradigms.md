@@ -249,7 +249,7 @@ info:
            
            ?-prereq(CS475, CS374). % no
            
-           /* Horn Clause: does there exist a Z such that Y is a prereq of Z AND that X must be taken before Z? */
+           % Horn Clause: does there exist a Z such that Y is a prereq of Z AND that X must be taken before Z? 
            take_before(X, Y) :- prereq(Z, Y), take_before(X, Z). % Transitive closure through recursion
            
            ?-take_before(CS173, CS374). % yes
