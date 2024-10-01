@@ -244,13 +244,13 @@ info:
            course(CS374).
            course(CS475).
            
-           prereq(CS174, CS173).
-           prereq(CS374, CS174).
+           prereq(CS173, CS174).
+           prereq(CS174, CS374).
            
            ?-prereq(CS475, CS374). % no
            
            % Horn Clause: does there exist a Z such that Y is a prereq of Z AND that X must be taken before Z? 
-           take_before(X, Y) :- prereq(Z, Y), take_before(X, Z). % Transitive closure through recursion
+           take_before(X, Y) :- prereq(Y, Z), take_before(X, Z). % Transitive closure through recursion
            
            ?-take_before(CS173, CS374). % yes
         ]]></script> 
