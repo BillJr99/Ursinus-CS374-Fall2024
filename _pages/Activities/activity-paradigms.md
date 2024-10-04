@@ -254,6 +254,22 @@ info:
            
            ?-take_before(CS173, CS374). % yes
         ]]></script> 
+        <br>
+        <script type="syntaxhighlighter" class="brush: prolog"><![CDATA[
+        parent(alice, john).
+        parent(alice, mary).
+        parent(bob, john).
+        parent(bob, mary).
+        parent(susan, tom).
+        parent(susan, jane).
+        parent(david, tom).
+        parent(david, jane).
+        
+        sibling(X, Y) :-
+            parent(P, X),
+            parent(P, Y),
+            X \= Y.
+        ]]></script>         
       title: "Declarative Languages - Logic"
       questions:
         - "What query would result in a <code>yes</code> response according to the prerequisite rules above?" 
