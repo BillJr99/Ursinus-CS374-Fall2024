@@ -75,7 +75,7 @@ In short, you can generate your database of file hashes within your directory by
 find . -type 'f' -exec md5sum {} \; >db.txt 2>/dev/null
 ```
 
-**On Mac, the tool is called md5sum, and the output format is slightly different (the file name is the second token, and the path is the fourth token).**
+**On Mac, the tool is called md5, and the output format is slightly different (the file name is the second token, and the path is the fourth token).**
 
 Then, you can convert your data file to be comma delimited to make parsing easier by looping over each line in this file:
 
