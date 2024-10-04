@@ -272,7 +272,8 @@ info:
         ]]></script>         
       title: "Declarative Languages - Logic"
       questions:
-        - "What query would result in a <code>yes</code> response according to the prerequisite rules above?" 
+        - "What query would result in a <code>yes</code> response according to the prerequisite rules above?  How about a <code>no</code>?" 
+        - "How could you check that two people are half-siblings such that one parent is in common, but the second parent is not the same?  Hint: add more clauses to <code>sibling</code> to check that a third and fourth person is the parent of <code>X</code> and <code>Y</code>, respectively, and that those two parents are not equal."
         - "In your own words, what does the <code>take_before</code> clause specify, and how does it do so?" 
         - "Write a <a href=\"https://en.wikipedia.org/wiki/Horn_clause#Definition\">Horn Clause</a> that specifies that one might go outside if it is warm and not raining outside."
     - model: |
