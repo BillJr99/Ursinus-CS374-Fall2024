@@ -69,7 +69,7 @@ Define an anonymous or secondary lambda procedure to compute the discriminant of
 
 <span>\\(x1, x2 = \frac{-b \pm \sqrt{b^{2} - 4ac}}{2a}\\)</span><br>
 
-Specificaly, your anonymous lambda should compute:
+Specifically, your anonymous lambda should compute:
 
 <span>\\(b^{2} - 4ac\\)</span><br>
 
