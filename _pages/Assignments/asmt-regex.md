@@ -74,7 +74,11 @@ offset = offset + nextIndex # keep track of the absolute position of the most re
 match = re.search(r";", data[offset:])
 ```
 
-Create a text file called `somefile.txt` (or something else, and you can modify your code to use this file instead!).  Modify the code example above to search for semicolons in your file, in a loop, printing out the span of all found matches until the `nextIndex` exceeds the length of the file data, or until no match is found.
+Create a text file called `somefile.txt` (or something else, and you can modify your code to use this file instead!).  Modify the code example above to search for semicolons in your file, in a loop, printing out the span of all found matches until the `nextIndex` exceeds the length of the file data, or until no match is found.  
+
+You will want to play around with the functions: print out their results, figure out how they work.  Check out the `re` library documentation.  Don't expect to understand everything at first glance - I'm asking you to explore the library as part of this exercise!  In particular, note that `re.search` returns a `match` whose `span` is a tuple containing two items: the index of the beginning of the match, and the index of the end of the match.  You can generate a substring using `data[match.span()[0], match.span()[1]` to view the matching text (although I suggest making variables to represent the span, the starting index, and the ending index, to improve the readability of your code!).  However, to ensure you don't find the same match again, you will likely substring your data prior to looping using `data[offset:]`, where `offset` is the index of the end of the match.  The next time you loop, though, you'll be given offsets that are relative to this new position!  You'll want to add `offset` to the beginning and end of your `span` tuple values in order to obtain absolute offsets.  Alternatively, you can leave these matches as relative offsets, and when you print the substrings themselves, add the ending index of the prior match span to the current ones to obtain a running total.
+
+### Modularizing this Function into a Regular Expression Processor
 
 Put this code into a function that returns an array of match spans for a given regular expression string and text data:
 
@@ -90,7 +94,7 @@ def regexmatch(pattern, file):
     return result
 ```
 
-Don't forget to replace `r";"` with the variable parameter `pattern` when you merge into the function!
+Don't forget to replace `r";"` with the variable parameter `pattern` when you merge into the function.  You will have effectively created `grep` by doing this!
 
 ## Part 2: Regular Expressions
 
